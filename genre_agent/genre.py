@@ -63,7 +63,7 @@ class Genre_Selection():
                     self.max = genre
 
     async def get_genre(self):
-        await self.db_request(f"MATCH (p:Class{{name: 'concept_request'}})-[:context]->(a:Node)), (g:Class{{name: '{self.max}'}}) \n CREATE(a)-[:nrel_genre]->(g)")
+        await self.db_request(f"MATCH (p:Class{{name: 'concept_request'}})-[:context]->(a:Node), (g:Class{{name: '{self.max}'}}) \n CREATE(a)-[:nrel_genre]->(g)")
 
         
 async def checking_base():
@@ -71,5 +71,6 @@ async def checking_base():
     await i.take_tags()
     await i.category()
     await i.count_max()
+    await i.get_genre()
 
 asyncio.run(checking_base())
