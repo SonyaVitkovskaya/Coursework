@@ -7,12 +7,12 @@ class Genre_Selection():
         self.tags = []
         self.cat = {"clothes":0, 'd_anim':0, "flowers":0, 'food':0, 'furniture':0, 'harvest':0, 'household_utensils':0,
                      'people':0, 'prir':0, 'street':0, 'tableware':0, 'w_anim':0}
-        self.genres = {"concept_portrait":['people',"clothes"],
-                        "concept_household":['people', "clothes", 'd_anim', 'food', 'furniture', 'household_utensils', 'prir', 'tableware'],
-                          "concept_still_life":["flowers",'furniture','harvest','tableware'],
-                            "concept_scenery":[ "flowers", 'prir'], 
-                            "concept_town_scenery":['people','d_anim', 'street'],
-                              "concept_animalistic":['d_anim', 'household_utensils', 'prir', 'street', 'w_anim']}
+         self.genres = {"concept_portrait":[('people', 0.3), ("clothes", 0.1), ('furniture', 0.1)],
+                        "concept_household":[('people', 0.2), ("clothes",0.2), ('d_anim', 0.2), ('food', 0.1), ('furniture', 0.2), ('household_utensils', 0.3), ('prir', 0.1), ('harvest', 0.1)],
+                          "concept_still_life":[("flowers", 0.3 ),('furniture', 0.1) ,('harvest',0.3),('tableware', 0.3)],
+                            "concept_scenery":[ ("flowers", 0.2), ('prir', 0.3)], 
+                            "concept_town_scenery":[('people', 0.1),('d_anim', 0.3 ), ('street', 0.3)],
+                              "concept_animalistic":[('d_anim', 0.3), ('household_utensils', 0.1),  ('prir', 0.1), ('w_anim', 0.3)]}
         self.max = ''
 
     #запрос в neo4j
@@ -57,7 +57,7 @@ class Genre_Selection():
         for genre in self.genres:
             check_max = 0
             for category in self.genres[genre]:
-                check_max += self.cat[category]
+                check_max += self.cat[category[0]]*category[1]
                 if check_max > max:
                     max=check_max
                     self.max = genre
