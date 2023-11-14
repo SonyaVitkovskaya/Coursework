@@ -29,7 +29,7 @@ class Genre_Selection():
 
     #поиск тегов изображения
     async def take_tags(self):
-        response = await self.db_request("MATCH(a:Class{name:'сurrent_request'})-[r:nrel_context]->(il:Node)-[:nrel_tag]->(tag:Node) RETURN tag.name")
+        response = await self.db_request("MATCH(a:Class{name:'сoncept_request'})-[r:context]->(il:Node)-[:nrel_tag]->(tag:Node) RETURN tag.name")
         for record in response:
             self.tags.append(record.value())
 
@@ -63,7 +63,7 @@ class Genre_Selection():
                     self.max = genre
 
     async def get_genre(self):
-        await self.db_request(f"MATCH (p:Class{{name: 'current_request'}})-[:nrel_context]->(a:Node), (g:Class{{name: '{self.max}'}}) \n CREATE(a)-[:nrel_genre]->(g)")
+        await self.db_request(f"MATCH (p:Class{{name: 'concept_request'}})-[:context]->(a:Node), (g:Class{{name: '{self.max}'}}) \n CREATE(a)-[:nrel_genre]->(g)")
 
         
 async def checking_base():
