@@ -11,7 +11,7 @@ class Genre_Selection():
                         "concept_household":[('people', 0.2), ("clothes",0.2), ('d_anim', 0.2), ('food', 0.1), ('furniture', 0.2), ('household_utensils', 0.3), ('prir', 0.1), ('harvest', 0.1)],
                           "concept_still_life":[("flowers", 0.3 ),('furniture', 0.1) ,('harvest',0.3),('tableware', 0.3)],
                             "concept_scenery":[ ("flowers", 0.2), ('prir', 0.3)], 
-                            "concept_town_scenery":[('people', 0.1),('d_anim', 0.3 ), ('street', 0.3)],
+                            "concept_town_scenery":[('people', 0.1),('d_anim', 0.1), ('street', 0.3)],
                               "concept_animalistic":[('d_anim', 0.3), ('household_utensils', 0.1),  ('prir', 0.1), ('w_anim', 0.3)]}
         self.max = ''
 
