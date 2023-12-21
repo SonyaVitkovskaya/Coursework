@@ -1,0 +1,10 @@
+vase
+saucer
+pot
+plate
+jug
+glass
+cup
+ladle
+bowl
+wine glass
