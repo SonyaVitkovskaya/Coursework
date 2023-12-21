@@ -1,0 +1,46 @@
+andreas_gursky <- concept_photographer;;
+andreas_gursky => nrel_main_idtf: 
+[Andreas Gursky](* <- lang_en;; *); 
+[Андреас Гурски](* <- lang_ru;; *);;
+
+andreas_gursky <- rrel_key_sc_element: ...
+        (*
+            <- statement;;
+                => nrel_main_idtf: [Утв. (О Андреасе Гурски)] (* <- lang_ru;; *);;
+                => nrel_main_idtf: [Stat. (About Andreas Gursky)] (* <- lang_en;; *);;
+                <= nrel_sc_text_translation: ...
+                (*
+                    -> rrel_example:
+                        [Немецкого фотографа Андреаса Гурски называют мастером панорамных снимков-картин. Масштабность его работ поражает воображение - это многометровые арт-полотна, за которые сражаются крупнейшие мировые музеи современного искусства. Гурски активно использует достижения компьютерной графики для обработки фото, печатает работы размером два-четыре метра, создает с помощью цифровых инструментов пространство большее, чем в состоянии охватить камера. Это скорее абстрактный фотохудожник, чем классический фотограф, который снимает жизнь, как она есть. Он использует спутниковые изображения для съемки океана, "склеивает" разные кадры в единое выразительное полотно, печатая картины невероятного размера. На его снимках домов-муравейников можно разглядеть настольные лампы и цветы на подоконниках. Фото Андреаса Гурски - настоящая современная живопись, он концептуалист и серьезный художник.](* <- lang_ru;; *);; 
+                    -> rrel_example:
+                        [German photographer Andreas Gursky is known as the master of panoramic photography. The scale of his works is amazing - these are multi-meter art canvases, for which the world's largest museums of contemporary art are fighting. Gursky actively uses the achievements of computer graphics for photo processing, prints two to four meters in size, creates with the help of digital tools a space larger than the camera is able to cover. This is more of an abstract photo artist than a classic photographer who captures life as it is. He uses satellite images to capture the ocean, "gluing" different frames into a single expressive canvas, printing paintings of incredible size. In his photographs of anthill houses, you can see table lamps and flowers on the windowsills. The photo of Andreas Gursky is a real modern painting, he is a conceptualist and a serious artist.](* <- lang_en;; *);;
+                *);;
+            =>nrel_using_constants:...(*<-concept_photographer; concept_photograph;concept_painting;;*);;
+        *);;
+ 
+andreas_gursky <-rrel_key_sc_element:...
+        (*
+	        <-illustration;;
+	        => nrel_main_idtf:
+		        [Рис. (Портрет Андреаса Гурски)](*<-lang_ru;;*);
+		        [Pic. (Portarait of Andreas Gursky)](*<-lang_en;;*);;
+	        <= nrel_sc_text_translation:
+            ...
+	        (*
+		        -> rrel_example: "file://andreas.jpg"(* => nrel_format:format_jpg;; *);;
+	        *);;
+        *);;
+        
+andreas_gursky =>nrel_work_technique:
+concept_traditional_photography;
+concept_panoramic_photography;;
+
+andreas_gursky <= nrel_doer:
+concept_scenery;
+concept_aerial_photography;
+concept_street_photography;
+concept_staged_photography;
+concept_portrait;
+concept_household_art;;
+
+

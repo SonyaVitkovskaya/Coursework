@@ -1,0 +1,38 @@
+concept_stereography <- sc_node_class;;
+concept_stereography => nrel_main_idtf:
+[stereography](* <- lang_en;; *);
+[стереография](* <- lang_ru;; *);;
+concept_stereography => nrel_idtf:
+[3D-photography](* <- lang_en;; *);
+[3D-фотография](* <- lang_ru;; *);;
+									
+concept_stereography <- rrel_key_sc_element:...
+	(*
+	=> nrel_main_idtf:[Опр.(стереография)](*<- lang_ru;; *);;
+	=> nrel_main_idtf:[Def.(stereography)](*<- lang_en;; *);;
+	<-sc_definition;;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Стереофотография — разновидность фотографии, позволяющая видеть заснятую сцену объёмной за счёт бинокулярного зрения.](*<- lang_ru;; *);;
+		-> rrel_example:
+			[Traditional photography is the most common photography technique, which consists in obtaining a two-dimensional image using a camera.](*<- lang_en;; *);;
+		*);;
+	=> nrel_using_constants: ...
+			(* <-concept_photography;; *);;
+	*);;
+
+concept_stereography <- rrel_key_sc_element: ...
+	(*
+		<- sc_statement;;
+		=> nrel_main_idtf:[Утв. (О стереографии)] (* <- lang_ru;; *) ;;
+		=> nrel_main_idtf:[Stat.(About stereography)](*<- lang_en;; *);;
+		<= nrel_sc_text_translation: ...
+			(*	
+				-> rrel_example: [В стереографии изображение создаёт иллюзию глубины пространства путём одновременной съёмки двух кадров стереопары объективами, параллельные оптические оси которых располагаются на расстоянии стереобазиса. В результате, при рассматривании готового снимка возникает иллюзия объёма, отсутствующая на обычных плоских фотографиях. Современная стереофотография может быть как аналоговой, так и цифровой. Часто для её обозначения используется термин «3D фото». ](*<-lang_ru;;*);;
+				-> rrel_example: [In stereography, the image creates the illusion of depth of space by simultaneously shooting two frames of a stereo pair with lenses whose parallel optical axes are located at a distance of the stereo basis. As a result, when looking at the finished image, an illusion of volume arises, which is absent in ordinary flat photographs. Modern stereo photography can be either analog or digital. Often the term "3D photography" is used to refer to it.](*<-lang_en;;*);;
+			*);;
+		=> nrel_using_constants: ...
+			(* <-concept_lens;concept_photograph;concept_photography;;*);;
+	*);;

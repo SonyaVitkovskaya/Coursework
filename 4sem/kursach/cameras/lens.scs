@@ -1,0 +1,35 @@
+concept_lens <- sc_node_class;;
+concept_lens => nrel_main_idtf:
+[lens](* <- lang_en;; *);
+[объектив](* <- lang_ru;; *);;
+
+concept_lens <- rrel_key_sc_element:...
+  (*
+  => nrel_main_idtf:[Опр.(объектив)](*<- lang_ru;; *);;
+  => nrel_main_idtf:[Def.(lens)](*<- lang_en;; *);;
+  <-sc_definition;;
+  <=nrel_sc_text_translation:
+    ...
+    (*
+    -> rrel_example:
+      [Объектив — оптическая система, являющаяся частью оптического прибора,
+       обращённая к объекту наблюдения или съёмки и формирующая его действительное или мнимое
+        изображение.](*<- lang_ru;; *);;
+    -> rrel_example:
+      [Lens — an optical system that is part of an optical device,
+        facing the object of observation or filming and forming its real or imaginary
+         image.](*<- lang_en;; *);;
+    *);;
+  *);;
+
+concept_lens <-rrel_key_sc_element:...
+        (*
+	        <-illustration;;
+	        => nrel_main_idtf:
+		        [Рис. (объектив)](*<-lang_ru;;*);
+		        [Pic. (lens)](*<-lang_en;;*);;
+	        <= nrel_sc_text_translation:...
+	        (*
+		        -> rrel_example: "file://lens.jpeg"(* => nrel_format:format_jpg;; *);;
+	        *);;
+        *);;

@@ -1,0 +1,78 @@
+concept_system_camera <- sc_node_class;;
+concept_system_camera => nrel_main_idtf:
+[system camera](* <- lang_en;; *);
+[системный фотоаппарат](* <- lang_ru;; *);;
+
+concept_system_camera <- rrel_key_sc_element:...
+  (*
+  => nrel_main_idtf:[Опр. (системный фотоаппарат)](*<- lang_ru;; *);;
+  => nrel_main_idtf:[Def.(system camera)](*<- lang_en;; *);;
+  <-sc_definition;;
+  <=nrel_sc_text_translation:
+    ...
+    (*
+    -> rrel_example:
+      [Системный фотоаппарат — фотоаппарат модульной конструкции со сменными объективами и другими
+ ключевыми компонентами, которые устанавливаются на корпус, представляющий собой ядро системы.](*<- lang_ru;; *);;
+    -> rrel_example:
+      [System camera — a camera of a modular design with interchangeable lenses and other
+  key components that are installed on the chassis, which is the core of the system.](*<- lang_en;; *);;
+    *);;
+    => nrel_using_constants: ...
+      (* <-concept_camera; concept_lens;;*);;
+  *);;
+
+concept_system_camera <- rrel_key_sc_element: ...
+  (*
+    <- sc_statement;;
+    => nrel_main_idtf: [Утв. (О системном фотоаппарате)] 
+      (* <- lang_ru;; *) ;;
+      => nrel_main_idtf:[Stat.(About system camera)](*<- lang_en;; *);;
+    <= nrel_sc_text_translation: ...
+      (*  
+        -> rrel_example: [Ключевым элементом любых фотосистем до сегодняшнего дня выступает стандарт присоединения сменной оптики,
+   определяющий основные функциональные и технические параметры аппаратуры.
+Чаще всего системными считаются однообъективные зеркальные фотоаппараты,
+ но к дальномерным и шкальным камерам со сменной оптикой это относится в равной степени.
+  В цифровой фотографии к системным относятся цифровые зеркальные и беззеркальные фотоаппараты.
+   Фотоаппараты со сменными принадлежностями, но жёстковстроенным объективом не могут считаться системными. ](*<-lang_ru;;*);;
+           -> rrel_example: [Until today, the key element of any photosystems is the standard for attaching interchangeable optics,
+    determining the main functional and technical parameters of the equipment.
+Most often, single-lens reflex cameras are considered system cameras,
+  but this applies equally to rangefinder and scale cameras with interchangeable lenses.
+   In digital photography, system cameras include digital SLR and mirrorless cameras.
+    Cameras with interchangeable accessories but a fixed lens cannot be considered system cameras.](*<-lang_ru;;*);;
+      *);;
+    => nrel_using_constants: ...
+      (* <-concept_slr_camera;concept_photography;concept_camera;;*);;
+  *);; 
+ 
+concept_system_camera => nrel_advantages:
+ [1. Малые габариты.](*<- lang_ru;; *);
+ [2. Высокое качество изображения. Качество изображений такое же, как у любительских зеркальных фотокамер.](*<- lang_ru;; => nrel_using_constants: ... (* <-concept_slr_camera;;*);; *);
+ [3. Высокая скорость съемки.](*<- lang_ru;; *);;
+ 
+concept_system_camera => nrel_disadvantages:
+[1. Мало кнопок управлений на корпусе.](*<- lang_ru;; *);
+[2. Быстрый разряд аккумулятора и его малый срок службы](*<- lang_ru;; *);;
+
+concept_system_camera <-rrel_key_sc_element:...
+        (*
+	        <-illustration;;
+	        => nrel_main_idtf:
+		        [Рис. (системный фотоаппарат)](*<-lang_ru;;*);
+		        [Pic. (system camera)](*<-lang_en;;*);;
+	        <= nrel_sc_text_translation:...
+	        (*
+		        -> rrel_example: "file://system.jpg"(* => nrel_format:format_jpg;; *);;
+	        *);;
+        *);;
+
+concept_system_camera => nrel_advantages:
+ [1. Small dimensions.](*<- lang_en;; *);
+ [2. High image quality. The image quality is the same as that of amateur SLR cameras.](*<- lang_en;; => nrel_using_constants: ... (* <-concept_slr_camera;;*);;*);
+ [3. High shooting speed.](*<- lang_en;; *);;
+ 
+concept_system_camera => nrel_disadvantages:
+[1. Few control buttons on the case.](*<- lang_en;;*);
+[1. Rapid battery drain and short battery life](*<- lang_en;;*);;

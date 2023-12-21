@@ -1,0 +1,69 @@
+concept_medium_format_camera <- sc_node_class;;
+concept_medium_format_camera => nrel_main_idtf:
+[medium format camera](* <- lang_en;; *);
+[фотоаппарат среднего формата](* <- lang_ru;; *);;
+
+concept_medium_format_camera => nrel_idtf:
+[среднеформатный фотоаппарат](* <- lang_ru;; *);;
+
+concept_medium_format_camera <- rrel_key_sc_element:...
+  (*
+  => nrel_main_idtf:[Опр. (фотоаппарат среднего формата)](*<- lang_ru;; *);;
+  => nrel_main_idtf:[Def.(medium format camera)](*<- lang_en;; *);;
+  <-sc_definition;;
+  <=nrel_sc_text_translation:
+    ...
+    (*
+    -> rrel_example:
+      [Среднеформатные фотоаппараты — класс цифровых фотоаппаратов, обладающий матрицей среднего формата.
+       В отличие от плёночных среднеформатных фотокамер, формат плёнок для которых
+        стандартизирован, размеры матрицы в цифровых среднеформатных фотоаппаратах
+         устанавливает производитель по своему усмотрению, поэтому средний цифровой формат 
+         — формат матрицы больший, чем полнокадровая матрица (соответствует стандартному формату
+          плёнки для малого формата). ](*<- lang_ru;; *);;
+    -> rrel_example:
+      [Medium format cameras are a class of digital cameras with a medium format sensor.
+        Unlike film medium format cameras, the film format for which
+         standardized, matrix sizes in digital medium format cameras
+          sets by the manufacturer at its own discretion, so the average digital format
+          - the matrix format is larger than the full-frame matrix (corresponds to the standard format
+           films for small format).](*<- lang_en;; *);;
+    *);;
+    => nrel_using_constants: ...
+      (* <-concept_camera;concept_camera_roll;;*);;
+  *);;
+ 
+concept_medium_format_camera => nrel_advantages:
+ [1. Высокое разрешение при допустимых шумах.](*<- lang_ru;; *);
+ [2. Оптические эффекты при большом размере матрицы.](*<- lang_ru;; *);;
+ 
+concept_medium_format_camera => nrel_disadvantages:
+[1. Низкая мобильность.](*<- lang_ru;;*);
+[2. Низкий диапазон светочувствительности.](*<- lang_ru;; => nrel_using_constants: ...
+      (* <-concept_camera_sensitivity;;*);; *);
+[3. Низкий предел выдержек.](*<- lang_ru;;=> nrel_using_constants: ...
+      (* <-concept_camera_exposure;;*);;*);;
+
+concept_medium_format_camera => nrel_advantages:
+ [1. High resolution with acceptable noise.](*<- lang_en;; *);
+ [2. Optical effects with a large matrix size.](*<- lang_en;; *);;
+ 
+concept_medium_format_camera => nrel_disadvantages:
+[1. Low mobility.](*<- lang_en;;*);
+[2. Low sensitivity range.](*<- lang_en;; => nrel_using_constants: ...
+      (* <-concept_camera_sensitivity;;*);; *);
+[3. Low exposure limit.](*<- lang_en;;=> nrel_using_constants: ...
+      (* <-concept_camera_exposure;;*);;*);;
+
+
+concept_medium_format_camera <-rrel_key_sc_element:...
+        (*
+	        <-illustration;;
+	        => nrel_main_idtf:
+		        [Рис. (фотоаппарат среднего формата)](*<-lang_ru;;*);
+		        [Pic. (medium format camera)](*<-lang_en;;*);;
+	        <= nrel_sc_text_translation:...
+	        (*
+		        -> rrel_example: "file://format.jpg"(* => nrel_format:format_jpg;; *);;
+	        *);;
+        *);;

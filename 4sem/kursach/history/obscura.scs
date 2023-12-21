@@ -1,0 +1,76 @@
+concept_camera_obscura <-sc_node_class;;
+concept_camera_obscura => nrel_main_idtf: 
+[camera obscura](* <- lang_en;; *);
+[камера-обскура](* <- lang_ru;; *);;
+				 					
+concept_camera_obscura <- rrel_key_sc_element:...
+	(*
+	=> nrel_main_idtf:[Опр.(камера обскура)](*<- lang_ru;; *);;
+	=> nrel_main_idtf:[Def.(camera obscura)](*<- lang_en;; *);;
+	<-sc_definition;;
+	<=nrel_sc_text_translation: ...
+		(*
+		-> rrel_example:
+			[Камера-обскура — простейший вид устройства, позволяющего получать оптическое изображение объектов.](*<- lang_ru;;*);;
+		-> rrel_example:
+			[The camera obscura is the simplest type of device that allows you to obtain an optical image of objects.](*<- lang_en;; *);;
+		*);;
+	=> nrel_using_constants: ...
+			(* <-concept_photograph;;*);;
+	*);;
+
+concept_camera_obscura <- rrel_key_sc_element: ...
+	(*
+		<- sc_statement;;
+		=> nrel_main_idtf:[Утв. (О камере обскура)] (* <- lang_ru;; *) ;;
+		=> nrel_main_idtf:[Stat.(About camera obscura)](*<- lang_en;; *);;
+		<= nrel_sc_text_translation: ...
+			(*	
+				-> rrel_example: [Камера-обскура редставляет собой светонепроницаемый ящик с отверстием в одной из стенок и экраном (матовым стеклом или тонкой белой бумагой) на противоположной стене. Лучи света, проходя сквозь малое отверстие, создают перевёрнутое изображение на экране. ](*<-lang_ru;;*);;
+				-> rrel_example: [The camera obscura is a light-tight box with a hole in one of the walls and a screen (frosted glass or thin white paper) on the opposite wall. Rays of light passing through a small hole create an inverted image on the screen.](*<-lang_en;;*);;
+			*);;
+		=> nrel_using_constants: ...
+			(* <-concept_photograph;;*);;
+			
+	*);;
+	
+concept_camera_obscura <-rrel_key_sc_element:...
+        (*
+	        <-illustration;;
+	        => nrel_main_idtf:
+		        [Рис. (Принцип работы камеры-обскура)](*<-lang_ru;;*);
+		        [Pic. (Operating principle of camera obscura)](*<-lang_en;;*);;
+	        <= nrel_sc_text_translation:
+            ...
+	        (*
+		        -> rrel_example: "file://obscura.jpg"(* => nrel_format:format_jpg;; *);;
+	        *);;
+        *);;
+        
+concept_camera_obscura <- rrel_key_sc_element: ...
+	(*
+		<- sc_statement;;
+		=> nrel_main_idtf:[Утв. (О камере обскура)] (* <- lang_ru;; *) ;;
+		=> nrel_main_idtf:[Stat.(About camera obscura)](*<- lang_en;; *);;
+		<= nrel_sc_text_translation: ...
+			(*	
+				-> rrel_example: [На основе камеры-обскуры были сделаны некоторые фотокамеры, называющиеся Стеноп.](*<-lang_ru;;*);;
+				-> rrel_example: [Based on the camera obscura, some cameras were made, called Stenop.](*<-lang_en;;*);;
+			*);;
+		=> nrel_using_constants: ...
+			(* <-concept_camera;;*);;
+			
+	*);;
+        
+concept_camera_obscura <-rrel_key_sc_element:...
+        (*
+	        <-illustration;;
+	        => nrel_main_idtf:
+		        [Рис. (Стеноп)](*<-lang_ru;;*);
+		        [Pic. (Stenop)](*<-lang_en;;*);;
+	        <= nrel_sc_text_translation:
+            ...
+	        (*
+		        -> rrel_example: "file://stenop.jpg"(* => nrel_format:format_jpg;; *);;
+	        *);;
+        *);;

@@ -1,0 +1,45 @@
+concept_portrait <- sc_node_class;;
+concept_portrait => nrel_main_idtf:
+[portrait](* <- lang_en;; *);
+[портрет](* <- lang_ru;; *);;
+
+concept_portrait <- rrel_key_sc_element:...
+	(*
+	=> nrel_main_idtf:[Опр.(портрет)](*<- lang_ru;; *);;
+	=> nrel_main_idtf:[Def.(portrait)](*<- lang_en;; *);;
+	<-sc_definition;;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Портрет – изображение или описание какого-либо человека либо группы людей.](*<- lang_ru;; *);;
+		-> rrel_example:
+			[A portrait is a picture or description of a person or group of people.](*<- lang_en;; *);;
+		*);;
+	=> nrel_using_constants: ...
+			(* <-concept_photograph;nrel_genre;;  *);;
+	*);;
+
+concept_portrait <- rrel_key_sc_element: ...
+	(*
+		<- sc_statement;;
+		=> nrel_main_idtf: [Утв. (О портрете в фотографии)] (* <- lang_ru;; *) ;;
+		=> nrel_main_idtf: [Stat. (About the portrait in photography)] (* <- lang_en;; *) ;;
+		<= nrel_sc_text_translation: ...
+			(*	
+				-> rrel_example: [Фотография в жанре портрета сразу стала очень популярной, дерзнув конкурировать
+			 с живописью (правда, получив при этом от художников презрительное прозвище – «живопись для бедных»).
+	Первые портреты делались непосредственно в фотомастерской. Для создания фотопортрета мастер использовал
+	 сложившиеся «канонические» позы. Известно, что из-за невысокой чувствительности дагеротипных пластинок
+	  экспозиции были весьма продолжительными. Чтобы помочь клиенту долгое время находиться в неподвижности, были придуманы разного рода головодержатели. 
+	  Но, несмотря на все эти сложности, фотохудожникам удавалось достигать удивительной непосредственности своих героев.](*<-lang_ru;;*);;
+				-> rrel_example: [Photography in the portrait genre immediately became very popular, daring to compete
+with painting (though, at the same time, having received a contemptuous nickname from artists - “painting for the poor”).
+The first portraits were made directly in the photo studio. To create a photo portrait, the master used
+established "canonical" postures. It is known that due to the low sensitivity of daguerreotype plates
+exposures were very long. To help the client to be immobile for a long time, various kinds of head holders were invented.
+But, despite all these difficulties, photo artists managed to achieve an amazing immediacy of their heroes.](*<-lang_en;;*);;
+			*);;
+		=> nrel_using_constants: ...
+			(* <-concept_photography;concept_painting;concept_exposition;concept_camera_sensitivity;;*);;
+	*);;

@@ -1,0 +1,17 @@
+nrel_disadvantages <- sc_node_norole_relation;;
+nrel_disadvantages => nrel_main_idtf:
+[disadvantage*](*<-lang_en;;*);
+[недостаток*]	(*<-lang_ru;;*);;
+	
+nrel_disadvantages <- rrel_key_sc_element: ...
+	(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Опр.(недостаток)] (* <- lang_ru;; *) ;;
+		=> nrel_main_idtf:[Def.(disadvantage)](*<- lang_en;; *);;
+		<= nrel_sc_text_translation: ...
+			(*	
+				-> rrel_example: [Недостаток — нежелательное качество, изъян.](*<-lang_ru;;*);;
+				-> rrel_example: [Disadvantage — undesirable quality, defect.]
+				(*<-lang_en;;*);;
+			*);;
+	*);;

@@ -1,0 +1,26 @@
+nrel_type <- sc_node_norole_relation;;
+
+nrel_type => nrel_main_idtf: [type*]
+	(*
+		<-lang_en;;
+	*);;
+nrel_type => nrel_main_idtf: [тип*]
+	(*
+		<-lang_ru;;
+	*);;
+	
+nrel_type <- rrel_key_sc_element: ...
+	(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Опр.(тип)] 
+			(* <- lang_ru;; *) ;;
+			=> nrel_main_idtf: [Def.(type)] 
+			(* <- lang_en;; *) ;;
+		<= nrel_sc_text_translation: ...
+			(*	
+				-> rrel_example: [Тип — разновидность чего-либо, отличающаяся общностью основных свойств.]
+				(*<-lang_ru;;*);;
+				-> rrel_example: [A type is a kind of something that has common basic properties.]
+				(*<-lang_en;;*);;
+			*);;
+	*);;

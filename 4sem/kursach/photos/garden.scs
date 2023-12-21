@@ -1,0 +1,23 @@
+photo_in_the_garden <- concept_photograph;;
+photo_in_the_garden => nrel_main_idtf: 
+[«In the Garden»](* <- lang_en;; *); 
+[«В саду»](* <- lang_ru;; *);;
+ 
+photo_in_the_garden <-rrel_key_sc_element:...
+        (*
+	        <-illustration;;
+	        => nrel_main_idtf:
+		        [Рис.(«В саду»)](*<-lang_ru;;*);
+		        [Pic. («In the Garden»)](*<-lang_en;;*);;
+	        <= nrel_sc_text_translation:
+            ...
+	        (*
+		        -> rrel_example: "file://garden.jpg"(* => nrel_format:format_jpg;; *);;
+	        *);;
+        *);;
+
+photo_in_the_garden =>nrel_genre: concept_household_art;;
+photo_in_the_garden =>nrel_technique: concept_traditional_photography;;
+photo_in_the_garden =>nrel_author: tina_barney;;
+1982 <- number;;
+photo_in_the_garden => nrel_creation_year: 1982;;

@@ -1,0 +1,39 @@
+concept_aerial_photography <- sc_node_class;;
+concept_aerial_photography => nrel_main_idtf:
+[aerial photography](* <- lang_en;; *);
+[аэросъемка](* <- lang_ru;; *);;
+concept_aerial_photography => nrel_idtf:
+[аэрофотосъемка](* <- lang_ru;; *);;
+
+concept_aerial_photography <- rrel_key_sc_element:...
+	(*
+	=> nrel_main_idtf:[Опр.(аэросъемка)](*<- lang_ru;; *);;
+	=> nrel_main_idtf:[Def.(aerial photography)](*<- lang_en;; *);;
+	<-sc_definition;;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Аэросъёмка — фотографирование территории с определённой высоты от поверхности Земли при помощи аэрофотоаппарата, установленного на атмосферном летательном аппарате (самолёте, вертолёте, дирижабле и пр. или их беспилотном аналоге).](*<- lang_ru;; *);;
+		-> rrel_example:
+			[Aerial photography is photographing a territory from a certain height from the Earth's surface using an aerial camera mounted on an atmospheric aircraft (airplane, helicopter, airship, etc., or their unmanned analogue).](*<- lang_en;; *);;
+		*);;
+	=> nrel_using_constants: ...
+			(* <-concept_photography;;  *);;
+	*);;
+
+concept_aerial_photography <- rrel_key_sc_element: ...
+	(*
+		<- sc_statement;;
+		=> nrel_main_idtf: [Утв. (О аэросъемке)] (* <- lang_ru;; *) ;;
+		=> nrel_main_idtf: [Stat. (About the aerial photography)] (* <- lang_en;; *) ;;
+		<= nrel_sc_text_translation: ...
+			(*	
+				-> rrel_example: [ Если фотографии делаются вертикально вниз, то это плановые снимки. Если под углом, наклонно к горизонту – перспективные. Помимо плановой или перспективной, есть еще панорамная съемка. Она представляет собой фотографирование вращающимся объективом или на цилиндрическую поверхность.
+Для более подробного изображения отдельного участка земли или района делается серия из нескольких снимков, которые потом при помощи программ обработки изображений монтируются в одну фотографию. В этом случае кадры делаются с так называемым «перекрытием», то есть что бы один фрагмент участка был в нескольких снимках. ](*<-lang_ru;;*);;
+				-> rrel_example: [If the photos are taken vertically downwards, then these are planned shots. If at an angle, obliquely to the horizon - promising. In addition to planned or perspective, there is also panoramic shooting. It is photographing with a rotating lens or on a cylindrical surface.
+For a more detailed image of a particular piece of land or area, a series of several photographs is taken, which are then assembled into one photograph using image processing programs. In this case, frames are made with the so-called "overlapping", that is, so that one fragment of the site is in several pictures.](*<-lang_en;;*);;
+			*);;
+		=> nrel_using_constants: ...
+			(* <-concept_lens;concept_photograph;concept_panoramic_photography;;*);;
+	*);;

@@ -1,0 +1,27 @@
+nrel_creation_year <- sc_node_norole_relation;;
+
+nrel_creation_year => nrel_main_idtf:[creation year*]
+	(*
+		<-lang_en;;
+	*);;
+nrel_creation_year => nrel_main_idtf: [год создания*]
+	(*
+		<-lang_ru;;
+	*);;
+
+nrel_creation_year <- rrel_key_sc_element: ...
+	(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Опр.(год создания)] 
+			(* <- lang_ru;; *) ;;
+			=> nrel_main_idtf: [Def.(creation year)] 
+			(* <- lang_en;; *) ;;
+		<= nrel_sc_text_translation: ...
+			(*	
+				-> rrel_example: [Год создания* — бинарное отношение, связывающее произведение искусства с числом, обозначающим год, в которм было создано данное произведение.]
+				(*<-lang_ru;;*);;
+				-> rrel_example: [Creation year* is a binary relation that relates a work of art to a number representing the year in which the work was created.]
+				(*<-lang_en;;*);;
+			*);;
+	*);;
+	

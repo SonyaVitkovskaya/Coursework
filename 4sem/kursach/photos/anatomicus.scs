@@ -1,0 +1,39 @@
+photo_dali_atomicus <- concept_photograph;;
+photo_dali_atomicus => nrel_main_idtf: 
+[«Dali Atomicus»](* <- lang_en;; *); 
+[«Дали атомикус»](* <- lang_ru;; *);;
+photo_dali_atomicus <- rrel_key_sc_element: ...
+        (*
+            <- sc_statement;;
+                => nrel_main_idtf: [Утв.(О «Дали атомикус»)] (* <- lang_ru;; *);;
+                => nrel_main_idtf: [Stat.(About «Dali Atomicus»)] (* <- lang_en;; *);;
+                <= nrel_sc_text_translation: ...
+                (*
+                    -> rrel_example:
+                        [One of the heroes of the series of photographs "Jump" was Salvador Dali. Halsman took six hours to complete the "Dali Atomicus" shot. An easel and a painting were suspended from a fishing line from the ceiling, a chair in the foreground was held by the photographer's wife, and two assistants tossed cats and splashed a bucket of water. “When a person jumps, his attention is mainly directed to the act of jumping, the mask falls off and his true face appears,” Philippe Halsman explained the choice of subject for the photographs.](* <- lang_en;; *);; 
+                    -> rrel_example:
+                        [Одним из героев серии фотографий «Прыжок» стал Сальвадор Дали. Работа над кадром «Дали анатомикус» заняла у Халсмана шесть часов. Мольберт и картина были подвешены на леске к потолку, стул на переднем плане держала жена фотографа, а двое ассистентов подкидывали кошек и выплескивали ведро воды. «Когда человек прыгает, его внимание в основном направленно на сам акт прыганья, маска спадает и появится его истинное лицо», — объяснял выбор темы фотографий Филипп Халсман.](* <- lang_ru;; *);;
+                *);;
+                => nrel_using_constants: ...
+			(* <-concept_photograph;philippe_halsman;;*);;
+        *);;
+ 
+photo_dali_atomicus <-rrel_key_sc_element:...
+        (*
+	        <-illustration;;
+	        => nrel_main_idtf:
+		        [Рис.(«Дали атомикус»)](*<-lang_ru;;*);
+		        [Pic. («Dali Atomicus»)](*<-lang_en;;*);;
+	        <= nrel_sc_text_translation:
+            ...
+	        (*
+		        -> rrel_example: "file://anatomicus.jpg"(* => nrel_format:format_jpg;; *);;
+	        *);;
+        *);;
+
+photo_dali_atomicus =>nrel_genre: concept_staged_photography;
+concept_portrait;;
+photo_dali_atomicus =>nrel_technique: concept_traditional_photography;;
+photo_dali_atomicus =>nrel_author: philippe_halsman;;
+1948 <- number;;
+photo_dali_atomicus => nrel_creation_year: 1948;;

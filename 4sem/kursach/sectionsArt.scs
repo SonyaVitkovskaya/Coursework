@@ -1,0 +1,46 @@
+section_subject_domain_theatre
+    => nrel_main_idtf: 
+      [Section. Subject domain of theatre] 
+      (* <- lang_en;; *); 
+    => nrel_main_idtf:  
+      [Раздел. Предметная область театрального искусства]
+      (* <- lang_ru;; *);;
+
+section_subject_domain_architecture
+    => nrel_main_idtf: 
+      [Section. Subject domain of architecture] 
+      (* <- lang_en;; *); 
+    => nrel_main_idtf:  
+      [Раздел. Предметная область архитектурного искусства]
+      (* <- lang_ru;; *);;
+      
+section_subject_domain_art
+    => nrel_main_idtf: 
+      [Section. Subject domain of art] 
+      (* <- lang_en;; *); 
+    => nrel_main_idtf:  
+      [Раздел. Предметная область живописи]
+      (* <- lang_ru;; *);;   
+
+section_subject_domain_sculpture
+    => nrel_main_idtf: 
+      [Section. Subject domain of sculpture] 
+      (* <- lang_en;; *); 
+    => nrel_main_idtf:  
+      [Раздел. Предметная область скульптурного искусства]
+      (* <- lang_ru;; *);;   
+
+section_subject_domain_photography
+    => nrel_main_idtf: 
+      [Section. Subject domain of photography] 
+      (* <- lang_en;; *); 
+    => nrel_main_idtf:  
+      [Раздел. Предметная область фотоискусства]
+      (* <- lang_ru;; *);;  
+      
+section_subject_domain_photography -> rrel_key_sc_element:
+subject_domain_of_photoart;;
+section_subject_domain_photography <- non_atomic_section;;
+
+
+subject_domain_photography <- subject_domain;;

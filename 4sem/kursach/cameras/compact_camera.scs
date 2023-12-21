@@ -1,0 +1,74 @@
+concept_compact_camera <- sc_node_class;;
+concept_compact_camera => nrel_main_idtf:
+[компактный фотоаппарат](* <- lang_ru;; *);
+[compact camera](* <- lang_en;; *);;
+concept_compact_camera => nrel_idtf:
+[point-and-shoot camera](* <- lang_en;; *);;
+
+concept_compact_camera <- rrel_key_sc_element:...
+  (*
+  => nrel_main_idtf:[Опр. (компактный фотоаппарат)](*<- lang_ru;; *);;
+  => nrel_main_idtf:[Def.(compact camera)](*<- lang_en;; *);;
+  <-sc_definition;;
+  <=nrel_sc_text_translation:
+    ...
+    (*
+    -> rrel_example:
+      [Компактный фотоаппарат — фотоаппарат с несменным жёстковстроенным объективом,
+       как правило, небольшого веса и малых габаритов.](*<- lang_ru;; *);;
+    -> rrel_example:
+      [A compact camera is a camera with a non-replaceable fixed lens,
+       usually light in weight and small in size.](*<- lang_en;; *);;
+    *);;
+    => nrel_using_constants: ...
+      (* <-concept_camera; concept_lens;;*);;
+  *);;
+
+concept_compact_camera <- rrel_key_sc_element: ...
+  (*
+    <- sc_statement;;
+    => nrel_main_idtf: [Утв. (О компактном фотоаппарате)] 
+      (* <- lang_ru;; *) ;;
+      => nrel_main_idtf:[Stat.(About compact camera)](*<- lang_en;; *);;
+    <= nrel_sc_text_translation: ...
+      (*  
+        -> rrel_example: [Компактные фотоаппараты популярны среди людей,
+         которые не считают себя фотографами, но хотят использовать простые
+          в использовании камеры для снимков отпуска, вечеринок,
+           встреч и других событий.](*<-lang_ru;;*);;
+           -> rrel_example: [Compact cameras are popular among people
+          who do not consider themselves photographers but want to use simple
+           in using the camera for vacation shots, parties,
+            meetings and other events.](*<-lang_ru;;*);;
+      *);;
+    => nrel_using_constants: ...
+      (* <-concept_photographer; concept_camera; concept_photograph;;*);;
+  *);; 
+ 
+concept_compact_camera => nrel_advantages:
+ [1. Маленькие габариты: как правило, имеют минимальный вес и могут уместиться в карман.](*<- lang_ru;; *);
+ [2. Скорость подзарядки: обычно компактные камеры укомплектованы батареей класса АА, которую можно зарядить за считанные минуты.](*<- lang_ru;; *);
+ [3. Бесшумная работа.](*<- lang_ru;; *);;
+ 
+concept_compact_camera => nrel_disadvantages:
+[1. Низкое качество фотографий.](*<- lang_ru;; => nrel_using_constants: ... (* <-concept_photographer;;*);;*);;
+
+concept_compact_camera <-rrel_key_sc_element:...
+        (*
+	        <-illustration;;
+	        => nrel_main_idtf:
+		        [Рис. (компактный фотоаппарат)](*<-lang_ru;;*);
+		        [Pic. (compact camera)](*<-lang_en;;*);;
+	        <= nrel_sc_text_translation:...
+	        (*
+		        -> rrel_example: "file://compact.jpeg"(* => nrel_format:format_jpg;; *);;
+	        *);;
+        *);;
+
+concept_compact_camera => nrel_advantages:
+ [1. Small dimensions: as a rule, they have a minimum weight and can fit in a pocket.](*<- lang_en;; *);
+ [2. Charging speed: Usually compact cameras are equipped with an AA battery, which can be charged in a matter of minutes.](*<- lang_en;; *);
+ [3. Silent operation.](*<- lang_en;; *);;
+ 
+concept_compact_camera => nrel_disadvantages:
+[1. Poor photo quality.](*<- lang_en;; => nrel_using_constants: ... (* <-concept_photographer;;*);;*);;

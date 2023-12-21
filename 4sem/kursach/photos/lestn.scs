@@ -1,0 +1,54 @@
+photo_the_ladder <- concept_photograph;;
+
+photo_the_ladder => nrel_main_idtf: 
+["The Ladder"](* <- lang_en;; *); 
+  => nrel_main_idtf:  
+["Приставная лестница"](* <- lang_ru;; *);;
+
+photo_the_ladder <- rrel_key_sc_element: ...
+        (*
+            <- sc_statement;;
+                => nrel_main_idtf: [Утв.(О "Приставной лестнице")] (* <- lang_ru;; *);;
+                => nrel_main_idtf: [Stat.(About "The Ladder")] (* <- lang_en;; *);;
+                <= nrel_sc_text_translation: ...
+                (*
+                    -> rrel_example:
+                        [В 1823 году во время своего первого путешествия по Италии Вильям Тальбот пользовался камерой-обскурой для зарисовки пейзажей с натуры. Он искренне восхищался красотами чужой страны и, наблюдая за повседневной жизнью иностранцев, мечтал запечатлеть все увиденное. Изобретатель не планировал заниматься каким-то определенным жанром, такого понятия, как жанровая фотография, тогда просто не существовало. Однако на изданном им снимке «Приставная лестница» четко просматривается бытовой жанр.](* <- lang_ru;; *);; 
+                    -> rrel_example:
+                        [In 1823, during his first trip to Italy, William Talbot used a camera obscura to sketch landscapes from nature. He sincerely admired the beauties of a foreign country and, observing the daily life of foreigners, dreamed of capturing everything he saw. The inventor did not plan to deal with any particular genre, such a thing as genre photography simply did not exist then. However, the household genre is clearly visible in the photograph “Ladder” published by him.](* <- lang_en;; *);;
+                *);;
+                => nrel_using_constants: ...
+			(* <-concept_photography;concept_household_art;nrel_genre; william_henry_fox_talbot; concept_camera_obscura;;*);;
+        *);;
+ 
+photo_the_ladder <-rrel_key_sc_element:...
+        (*
+	        <-illustration;;
+	        => nrel_main_idtf:
+		        [Рис.("Приставная лестница")](*<-lang_ru;;*);
+		        [Pic. ("The Ladder")](*<-lang_en;;*);;
+	        <= nrel_sc_text_translation:
+            ...
+	        (*
+		        -> rrel_example: "file://ladder.jpg"(* => nrel_format:format_jpg;; *);;
+	        *);;
+        *);;
+
+photo_the_ladder =>nrel_genre: concept_household_art;;
+photo_the_ladder =>nrel_technique: concept_traditional_photography;;
+photo_the_ladder =>nrel_author: william_henry_fox_talbot;;
+1845 <- number;;
+photo_the_ladder => nrel_creation_year: 1845;;
+
+
+
+
+
+
+
+
+
+
+
+
+

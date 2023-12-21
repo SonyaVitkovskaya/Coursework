@@ -1,0 +1,35 @@
+concept_street_photography <- sc_node_class;;
+concept_street_photography => nrel_main_idtf:
+[street photography](* <- lang_en;; *);
+[уличная съемка](* <- lang_ru;; *);;
+
+concept_street_photography <- rrel_key_sc_element:...
+	(*
+	=> nrel_main_idtf:[Опр.(уличная съемка)](*<- lang_ru;; *);;
+	=> nrel_main_idtf:[Def.(street photography)](*<- lang_en;; *);;
+	<-sc_definition;;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Уличная фотография — жанр фотографии, сделанной в общественном месте: на улице, в парке, на пляже и т.п.](*<- lang_ru;; *);;
+		-> rrel_example:
+			[Street photography is a genre of photography taken in a public place: on the street, in the park, on the beach, etc.](*<- lang_en;; *);;
+		*);;
+	=> nrel_using_constants: ...
+			(* <-concept_photograph;nrel_genre;;*);;
+	*);;
+
+concept_street_photography <- rrel_key_sc_element: ...
+	(*
+		<- sc_statement;;
+		=> nrel_main_idtf: [Утв. (Об уличной съемке)] (* <- lang_ru;; *) ;;
+		=> nrel_main_idtf: [Stat. (About the street photography)] (* <- lang_en;; *) ;;
+		<= nrel_sc_text_translation: ...
+			(*	
+				-> rrel_example: [Вопрос уличных фотографов, фотографирующих незнакомых людей в общественных местах без их согласия для целей изобразительного искусства всегда был спорным. Фотографирование людей и места в общественных местах является законным в большинстве стран, защищающих свободу выражения мнений и свободу журналистики. Обычно существуют ограничения на то, как можно использовать фотографии людей, и большинство стран имеют конкретные законы, касающиеся конфиденциальности людей.](*<-lang_ru;;*);;
+				-> rrel_example: [The issue of street photographers photographing strangers in public places without their consent for fine art purposes has always been controversial. Photographing people and places in public places is legal in most countries that protect freedom of expression and freedom of journalism. There are usually restrictions on how photographs of people can be used, and most countries have specific laws regarding people's privacy.](*<-lang_en;;*);;
+			*);;
+		=> nrel_using_constants: ...
+			(* <-concept_photography;concept_photographer;;*);;
+	*);;

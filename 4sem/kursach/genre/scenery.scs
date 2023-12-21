@@ -1,0 +1,34 @@
+concept_scenery <- sc_node_class;;
+concept_scenery => nrel_main_idtf:
+[scenery](* <- lang_en;; *);
+[пейзаж](* <- lang_ru;; *);;
+
+concept_scenery <- rrel_key_sc_element:...
+	(*
+	=> nrel_main_idtf:[Опр.(пейзаж)](*<- lang_ru;; *);;
+	=> nrel_main_idtf:[Def.(scenery)](*<- lang_en;; *);;
+	<-sc_definition;;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Пейзаж – жанр,  в котором объектом изображения является природа. К пейзажу принято относить изображение больших пространств.](*<- lang_ru;; *);;
+		-> rrel_example:
+			[Scenery is a genre in which the object of the image is nature. It is customary to attribute the image of large spaces to the landscape.](*<- lang_en;; *);;
+		*);;
+	*);;
+
+
+concept_scenery <- rrel_key_sc_element: ...
+	(*
+		<- sc_statement;;
+		=> nrel_main_idtf: [Утв. (О пейзаже в фотографии)] (* <- lang_ru;; *) ;;
+		=> nrel_main_idtf: [Stat. (About the scenery in photography)] (* <- lang_en;; *) ;;
+		<= nrel_sc_text_translation: ...
+			(*	
+				-> rrel_example: [Фотографический жанр пейзажа, как и натюрморта, начал складываться с зарождения фотографии. С появлением дагеротипии многие фотографы стали снимать всемирно известные памятники архитектуры и другие достопримечательности. Широкому и быстрому распространению архитектурного пейзажа способствовали большие размеры, локальные объемы и неподвижность объектов архитектуры, тогда как изображение живой природы для фотографии того времени с её длительными выдержками и несовершенными материалами удавались с большим трудом. Причиной тому было движение на ветру листьев и травинок, дробность деталей пейзажа, труднодоступная воссозданию игра света и тени. Дальнейшая эволюция пейзажного жанра была связана с новыми возможностями фотографической техники: снимок стал документальным свидетельством изображённого фрагмента природы.](*<-lang_ru;;*);;
+				-> rrel_example: [The photographic genre of landscape, as well as still life, began to take shape with the birth of photography. With the advent of daguerreotype, many photographers began to shoot world-famous architectural monuments and other attractions. The large size, local volumes and immobility of architectural objects contributed to the wide and rapid spread of the architectural landscape, while the image of wildlife for photography of that time with its long exposures and imperfect materials was very difficult to achieve. The reason for this was the movement of leaves and blades of grass in the wind, the fragmentation of the details of the landscape, the play of light and shadow that was difficult to recreate. The further evolution of the landscape genre was associated with the new possibilities of photographic technology: the picture became a documentary evidence of the depicted fragment of nature.](*<-lang_en;;*);;
+			*);;
+		=> nrel_using_constants: ...
+			(* <-concept_architecture;nrel_genre; concept_camera_exposure;concept_still_life;concept_photography;concept_photographer;nrel_technique;;*);;
+	*);;

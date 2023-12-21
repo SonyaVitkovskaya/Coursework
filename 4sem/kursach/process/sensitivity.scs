@@ -1,0 +1,50 @@
+concept_camera_sensitivity <- sc_node_class;;
+concept_camera_sensitivity => nrel_main_idtf:
+[camera sensitivity](* <- lang_en;; *);
+[чувствительность](* <- lang_ru;; *);;
+
+concept_camera_sensitivity <- rrel_key_sc_element:...
+	(*
+	<-sc_definition;;
+	=> nrel_main_idtf:[Опр.(чувствительность)](*<- lang_ru;; *);;
+	=> nrel_main_idtf:[Def.(shutter speed)](*<- lang_en;; *);;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Чувствительность камеры это минимальная освещённость объекта наблюдения выраженная в люксах, позволяющая получать результирующее изображение с допустимым уровнем шумов.](*<- lang_ru;; *);;
+		-> rrel_example:
+			[Camera sensitivity is the minimum illumination of the object of observation, expressed in lux, which allows obtaining the resulting image with an acceptable noise level. The lower this parameter, the better the camera "sees" at night, all other things being equal.](*<- lang_en;; *);;
+		*);;
+		=> nrel_using_constants: ...
+			(* <-concept_camera;;*);;
+	*);;
+
+concept_camera_sensitivity <- rrel_key_sc_element: ...
+	(*
+		<- sc_statement;;
+		=> nrel_main_idtf: [Утв. (О чувствительности)](* <- lang_ru;; *) ;;
+		=> nrel_main_idtf:[Stat.(About camera sensitivity)](*<- lang_en;; *);;
+		<= nrel_sc_text_translation: ...
+			(*	
+				-> rrel_example: [Чем данный параметр ниже – тем лучше камера "видит" в ночное время при прочих равных условиях. Например, если в характеристиках камеры указано, что ее чувствительность составляет 0,01 лк, то это означает, что при освещенности на объекте видеонаблюдения меньше уровня в 0,01 лк камера "слепнет". Если же на объекте уровень освещенности равен 0,01 лк или больше, камера видит нормально.] 	(*<-lang_ru;;*);;
+				> rrel_example: [The lower this parameter, the better the camera "sees" at night, all other things being equal. For example, if the characteristics of the camera indicate that its sensitivity is 0.01 lux, then this means that when the illumination on the video surveillance object is less than the level of 0.01 lux, the camera "blinds". If the light level on the object is 0.01 lux or more, the camera sees normally.](*<-lang_en;;*);;
+			*);;
+			=> nrel_using_constants: ...
+			(* <-concept_camera;;*);;
+	*);;
+
+     
+concept_camera_sensitivity <-rrel_key_sc_element:...
+        (*
+	        <-illustration;;
+	        => nrel_main_idtf:
+		        [Рис.(чувствительность)](*<-lang_ru;;*);
+		        [Pic. (camera sensitivity)](*<-lang_en;;*);;
+	        <= nrel_sc_text_translation:
+            ...
+	        (*
+		        -> rrel_example: "file://sens.jpg"(* => nrel_format:format_jpg;; *);;
+	        *);;
+        *);;
+

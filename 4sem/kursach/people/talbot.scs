@@ -1,0 +1,41 @@
+william_henry_fox_talbot <- concept_photographer;;
+william_henry_fox_talbot => nrel_main_idtf: 
+[William Henry Fox Talbot](* <- lang_en;; *); 
+[Уильям Генри Фокс Тальбот](* <- lang_ru;; *);;
+
+william_henry_fox_talbot <- rrel_key_sc_element: ...
+        (*
+            <- statement;;
+                => nrel_main_idtf: [Утв. (О Уильяме Генри Фокс Тальботе)] (* <- lang_ru;; *);;
+                => nrel_main_idtf: [Stat. (About William Henry Fox Talbot)] (* <- lang_en;; *);;
+                <= nrel_sc_text_translation: ...
+                (*
+                    -> rrel_example:
+                        [Уильям Генри Фокс Тальбот — английский физик и химик, один из изобретателей фотографиического процесса. Считается изобретателем техники калотайпа, которая позволяла тиражировать фотоснимки путём получения на светочувствительном материале сначала негативного изображения, а затем неограниченного числа позитивных копий. Также занимался математикой, ботаникой, расшифровкой клинописных текстов.](* <- lang_ru;; *);; 
+                    -> rrel_example:
+                        [William Henry Fox Talbot was an English physicist and chemist, one of the inventors of the photographic process. He is considered the inventor of the calotype technique, which made it possible to replicate photographs by first obtaining a negative image on a photosensitive material, and then an unlimited number of positive copies. He also studied mathematics, botany, deciphering cuneiform texts.](* <- lang_en;; *);;
+                *);;
+            =>nrel_using_constants:...(*<-concept_photography; concept_photograph;;*);;
+        *);;
+ 
+william_henry_fox_talbot <-rrel_key_sc_element:...
+        (*
+	        <-illustration;;
+	        => nrel_main_idtf:
+		        [Рис. (Портрет Уильяма Генри Фокса Тальбота)](*<-lang_ru;;*);
+		        [Pic. (Portrait of William Henry Fox Talbot)](*<-lang_en;;*);;
+	        <= nrel_sc_text_translation:
+            ...
+	        (*
+		        -> rrel_example: "file://talbot.jpeg"(* => nrel_format:format_jpg;; *);;
+	        *);;
+        *);;
+        
+william_henry_fox_talbot =>nrel_work_technique:
+concept_photogram; 
+concept_traditional_photography;;
+
+william_henry_fox_talbot <= nrel_doer:
+concept_still_life;
+concept_household_art;
+concept_portrait;;

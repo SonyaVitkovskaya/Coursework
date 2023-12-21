@@ -1,0 +1,63 @@
+alfred_eisenstaedt<-concept_photographer;;
+alfred_eisenstaedt => nrel_main_idtf: 
+[Alfred Eisenstaedt](* <- lang_en;; *);
+[Альфред Эйзенштадт](* <- lang_ru;; *);;
+
+alfred_eisenstaedt <- rrel_key_sc_element: ...
+        (*
+            <- statement;;
+                => nrel_main_idtf: [Утв. (О Альфреде Эйзенштадте)] (* <- lang_ru;; *);;
+                => nrel_main_idtf: [Stat. (About Alfred Eisenstaedt)] (* <- lang_en;; *);;
+                <= nrel_sc_text_translation: ...
+                (*
+                    -> rrel_example:
+                        [Альфред Эйзенштадт родился в 1898 в городе Диршау (ныне Тчев),
+                         прожил 96 лет, из которых фотографии посвятил более 70. 
+                         Эйзенштадт учился в Берлинском университете, во время Первой мировой войны был призывником в
+                          немецкой армии. В 1929 году он получил своё первое задание, которое положило начало
+                           профессиональной карьере фотожурналиста, – снимал церемонию вручения Нобелевской премии в 
+                           Стокгольме. В отличие от многих фотожурналистов послевоенного периода, Эйзенштадт не был приверженцем 
+                        каких-либо конкретных событий или географических областей. Он был универсалом.
+                         И интересовали его больше люди и их эмоции, чем сами по себе новости. Редакторы ценили 
+                         в нём не только острый глаз, но и способность делать хорошие фотографии любой ситуации 
+                        или события. Беспристрастный, но проницательный взгляд фотографа и искусность в 
+                        композиции превратили его снимки в памятные документы эпохи и в историческом, 
+                        и в эстетическом контексте.](* <- lang_ru;; *);; 
+                    -> rrel_example:
+                        [Alfred Eisenstadt was born in 1898 in Dirschau (now Tczew),
+                          lived for 96 years, of which he devoted more than 70 to photography.
+                          Eisenstadt studied at the University of Berlin, during the First World War he was a conscript in
+                           German army. In 1929, he received his first assignment, which marked the beginning of
+                            professional career as a photojournalist – filmed the Nobel Prize ceremony in
+                            Stockholm. Unlike many photojournalists of the post-war period, Eisenstadt was not an adherent
+                         any specific events or geographic areas. He was a generalist.
+                          And he was more interested in people and their emotions than in the news itself. Editors appreciated
+                          he has not only a sharp eye, but also the ability to take good photos of any situation
+                         or events. The unbiased yet penetrating gaze of the photographer and the skill in
+                         compositions turned his photographs into memorable documents of the era and into historical,
+                         and in an aesthetic context.](* <- lang_en;; *);;
+                *);;
+            =>nrel_using_constants:...(*<-concept_photography; concept_photograph;;*);;
+        *);;
+ 
+alfred_eisenstaedt <-rrel_key_sc_element:...
+        (*
+	        <-illustration;;
+	        => nrel_main_idtf:
+		        [Рис. (Альфред Эйзенштадт)](*<-lang_ru;;*);
+		        [Pic. (Alfred Eisenstaedt)](*<-lang_en;;*);;
+	        <= nrel_sc_text_translation:
+            ...
+	        (*
+		        -> rrel_example: "file://eisenstadt.jpg"(* => nrel_format:format_jpg;; *);;
+	        *);;
+        *);;
+        
+alfred_eisenstaedt =>nrel_work_technique:
+concept_traditional_photography;;
+
+alfred_eisenstaedt <= nrel_doer:
+concept_scenery;
+concept_street_photography;
+concept_staged_photography;
+concept_portrait;;

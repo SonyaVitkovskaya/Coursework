@@ -1,0 +1,22 @@
+nrel_doer <- sc_node_norole_relation;;
+nrel_doer => nrel_main_idtf:
+[doer*](*<-lang_en;;*);
+[деятель*](*<-lang_ru;;*);;
+
+nrel_doer <- rrel_key_sc_element: ...
+	(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Опр.(деятель)] (* <- lang_ru;; *) ;;
+		=> nrel_main_idtf:[Def.(doer)](*<- lang_en;; *);;
+		<= nrel_sc_text_translation: ...
+			(*	
+				-> rrel_example: [Деятель — человек проявляющий себя в какой-либо области общественной жизни,
+				 участник чего-либо, лицо, играющее важную активную роль в чём-либо.]
+				(*<-lang_ru;;*);;
+				-> rrel_example: [Doer — a person who represents himself in any area of public life, life
+participant in something, a person who plays an important active role in something]
+				(*<-lang_en;;*);;
+			*);;
+	*);;
+
+	

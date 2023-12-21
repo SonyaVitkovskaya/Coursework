@@ -1,0 +1,39 @@
+photo_edward_villela <- concept_photograph;;
+photo_edward_villela => nrel_main_idtf: 
+[«Edward Villela»](* <- lang_en;; *); 
+[«Эдвард Виллелла»](* <- lang_ru;; *);;
+photo_edward_villela <- rrel_key_sc_element: ...
+        (*
+            <- sc_statement;;
+                => nrel_main_idtf: [Утв.(О «Эдвард Виллелла»)] (* <- lang_ru;; *);;
+                => nrel_main_idtf: [Stat.(About «Edward Villela»)] (* <- lang_en;; *);;
+                <= nrel_sc_text_translation: ...
+                (*
+                    -> rrel_example:
+                        [One of the heroes of the series of photographs "Jump" was the American dancer and head of the ballet troupe Edward Villella.](* <- lang_en;; *);; 
+                    -> rrel_example:
+                        [Одним из героев серии фотографий «Прыжок» стал американский танцовщик и руководитель балетной труппы Эдвард Виллелла.](* <- lang_ru;; *);;
+                *);;
+                => nrel_using_constants: ...
+			(* <-concept_photograph;philippe_halsman;;*);;
+        *);;
+ 
+photo_edward_villela <-rrel_key_sc_element:...
+        (*
+	        <-illustration;;
+	        => nrel_main_idtf:
+		        [Рис.(«Эдвард Виллелла»)](*<-lang_ru;;*);
+		        [Pic.(«Edward Villela»)](*<-lang_en;;*);;
+	        <= nrel_sc_text_translation:
+            ...
+	        (*
+		        -> rrel_example: "file://villella.jpg"(* => nrel_format:format_jpg;; *);;
+	        *);;
+        *);;
+
+photo_edward_villela =>nrel_genre: concept_staged_photography;
+concept_portrait;;
+photo_edward_villela =>nrel_technique: concept_traditional_photography;;
+photo_edward_villela =>nrel_author: philippe_halsman;;
+1961 <- number;;
+photo_edward_villela => nrel_creation_year: 1961;;

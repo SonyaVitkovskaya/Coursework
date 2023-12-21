@@ -1,0 +1,21 @@
+nrel_advantages <- sc_node_norole_relation;;
+nrel_advantages => nrel_main_idtf:
+[advantage*](*<-lang_en;;*);
+[преимущество*]	(*<-lang_ru;;*);;
+
+nrel_advantages => nrel_idtf:
+[достоинство*](*<-lang_en;;*);;
+	
+nrel_advantages <- rrel_key_sc_element: ...
+	(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Опр.(преимущество)] (* <- lang_ru;; *) ;;
+		=> nrel_main_idtf:[Def.(advantage)](*<- lang_en;; *);;
+		<= nrel_sc_text_translation: ...
+			(*	
+				-> rrel_example: [Преимущество — качество, свойство, выгодно отличающее кого-либо, что-либо от других.]
+				(*<-lang_ru;;*);;
+				-> rrel_example: [An advantage is a quality, a property that distinguishes someone or something from others.]
+				(*<-lang_en;;*);;
+			*);;
+	*);;

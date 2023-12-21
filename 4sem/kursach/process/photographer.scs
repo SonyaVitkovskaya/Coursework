@@ -1,0 +1,36 @@
+concept_photographer <- sc_node_class;;
+concept_photographer => nrel_main_idtf:
+[photographer](* <- lang_en;; *);
+[фотограф](* <- lang_ru;; *);;
+												
+concept_photographer <- rrel_key_sc_element:...
+	(*
+	=> nrel_main_idtf:[Опр.(фотограф)](*<- lang_ru;; *);;
+	=> nrel_main_idtf:[Def.(photographer)](*<- lang_en;; *);;
+	<-sc_definition;;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Фотограф — это человек, который с помощью фотоаппарата запечатлевает те или иные события, людей и объекты на фотографиях.](*<- lang_ru;; *);;
+		-> rrel_example:
+			[A photographer is a person who, using a camera, captures certain events, people and objects in photographs.](*<- lang_en;; *);;
+		*);;
+	=> nrel_using_constants: ...
+			(* <-concept_camera;concept_photograph;; *);;
+	*);;
+
+concept_photographer <- rrel_key_sc_element: ...
+	(*
+		<- sc_statement;;
+		=> nrel_main_idtf: [Утв. (О фотографе)](* <- lang_ru;; *) ;;
+		=> nrel_main_idtf:[Stat.(About photographer)](*<- lang_en;; *);;
+		<= nrel_sc_text_translation: ...
+			(*	
+				-> rrel_example: [Работа фотографа в узком смысле представляет собой непосредственно фотосъёмку. В широком смысле фотограф — человек, в чьи задачи входит подготовка к проведению съёмок (выбор темы, переговоры, получение разрешений и согласований, подбор моделей, реквизита, оборудования, выбор места и т. п.), непосредственно фотосъёмка и последующая работа по обработке и печати фотографий, продажа материала. В ряде случаев часть этих работ фотограф передаёт своим ассистентам, помощникам, визажистам, художникам по костюмам, агентам, осветителям, гримёрам и другим людям.] 	(*<-lang_ru;;*);;
+				> rrel_example: [The work of a photographer in the narrow sense is directly photographing. In a broad sense, a photographer is a person whose tasks include preparing for filming (choosing a topic, negotiating, obtaining permits and approvals, selecting models, props, equipment, choosing a location, etc.), taking pictures and subsequent work on processing and photo printing, sale of material. In some cases, the photographer transfers some of these works to his assistants, assistants, make-up artists, costume designers, agents, lighting, make-up artists and other people.](*<-lang_en;;*);;
+			*);;
+		=> nrel_using_constants: ...
+			(* <-concept_photography; concept_camera;;*);;
+	*);;
+

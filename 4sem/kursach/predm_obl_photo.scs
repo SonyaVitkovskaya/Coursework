@@ -1,0 +1,139 @@
+subject_domain_of_art <- sc_node_struct;;
+subject_domain_of_art => nrel_main_idtf: [Предметная область искусства]
+	(*<- lang_ru;;*); [Subject domain of art](*<- lang_en;;*);;		
+
+subject_domain_of_photoart <- sc_node_struct;;
+subject_domain_of_photoart <= nrel_private_subject_domain:
+subject_domain_of_art;;
+subject_domain_of_photoart => nrel_main_idtf: [Предметная область фотографии]
+	(*
+	<- lang_ru;;
+	*); [Subject domain of photoart]
+	(*
+	<- lang_en;;
+	*);;								
+
+subject_domain_of_photoart_doers <- sc_node_struct;;
+subject_domain_of_photoart_doers => nrel_main_idtf: [Предметная область деятелей фотографии]
+	(*
+	<- lang_ru;;
+	*); [Subject domain of photoart doers]
+	(*
+	<- lang_en;;
+	*);;
+
+subject_domain_of_photoart_doers -> rrel_not_maximum_studied_object_class:
+concept_photographer;;
+
+subject_domain_of_photoart_doers -> rrel_explored_relation:
+nrel_work_technique;;
+
+subject_domain_of_photoart_techniques<- sc_node_struct;;
+subject_domain_of_photoart_techniques => nrel_main_idtf: [Предметная область техник фотографии]
+	(*
+	<- lang_ru;;
+	*); [Subject domain of photoart techniques]
+	(*
+	<- lang_en;;
+	*);;
+	
+subject_domain_of_photoart_techniques -> rrel_not_maximum_studied_object_class:
+concept_traditional_photography;
+concept_stereography;
+concept_panoramic_photography;
+concept_photographics;
+concept_photogram;
+concept_light_painting;
+concept_multispectral_imaging;;
+	
+subject_domain_of_photoart_genres<- sc_node_struct;;
+subject_domain_of_photoart_genres => nrel_main_idtf: [Предметная область жанров фотографии]
+	(*
+	<- lang_ru;;
+	*); [Subject domain of photoart genres]
+	(*
+	<- lang_en;;
+	*);;
+	
+subject_domain_of_photoart_genres -> rrel_not_maximum_studied_object_class:
+concept_scenery;
+concept_street_photography;
+concept_macro_photography;
+concept_aerial_photography;
+concept_still_life;
+concept_portrait;
+concept_household_art;
+concept_staged_photography;;	
+	
+	
+subject_domain_of_photo_equipment<- sc_node_struct;;
+subject_domain_of_photo_equipment => nrel_main_idtf: [Предметная область фотооборудования]
+	(*
+	<- lang_ru;;
+	*); [Subject domain of photo equipment]
+	(*
+	<- lang_en;;
+	*);;
+	
+subject_domain_of_photo_equipment -> rrel_not_maximum_studied_object_class:
+concept_camera;
+concept_compact_camera;
+concept_lens;
+concept_medium_format_camera;
+concept_slr_camera;
+concept_system_camera;
+concept_camera_roll;;
+
+subject_domain_of_photo_equipment -> rrel_explored_relation:
+nrel_type;
+nrel_advantages;
+nrel_disadvantages;;
+	
+subject_domain_of_photoart_history<- sc_node_struct;;	
+subject_domain_of_photoart_history => nrel_main_idtf: [Предметная область истории фотографии]
+	(*
+	<- lang_ru;;
+	*); [Subject domain of photoart history]
+	(*
+	<- lang_en;;
+	*);;
+subject_domain_of_photoart_history -> rrel_not_maximum_studied_object_class:
+concept_camera_obscura;;
+
+subject_domain_of_photography <- sc_node_struct;;	
+subject_domain_of_photography => nrel_main_idtf: [Предметная область фотосъемки]
+	(*
+	<- lang_ru;;
+	*); [Subject domain of photography]
+	(*
+	<- lang_en;;
+	*);;
+	
+subject_domain_of_photography => rrel_not_maximum_studied_object_class:
+concept_photography;
+concept_photograph;
+concept_composition;
+concept_exposition;
+concept_camera_exposure;
+concept_focus;
+concept_camera_sensitivity;;
+
+subject_domain_of_photography -> rrel_explored_relation:
+nrel_creation_year;;	
+
+subject_domain_of_photoart => nrel_private_subject_domain:
+subject_domain_of_photoart_doers;
+subject_domain_of_photoart_techniques;
+subject_domain_of_photoart_genres;
+subject_domain_of_photo_equipment;
+subject_domain_of_photoart_history;
+subject_domain_of_photography;;
+	
+subject_domain_of_photoart -> rrel_explored_relation:
+nrel_author;
+nrel_doer;
+nrel_genre;
+nrel_technique;;
+
+subject_domain_of_photoart <- subject_domain;;
+

@@ -1,0 +1,42 @@
+photo_99cent <- concept_photograph;;
+photo_99cent => nrel_main_idtf: 
+[«Rhein II»](* <- lang_en;; *); 
+[«99 центов. Диптих»](* <- lang_ru;; *);;
+
+photo_99cent => nrel_idtf:
+[«99 центов. 1999»](* <- lang_ru;; *);;
+
+photo_99cent <- rrel_key_sc_element: ...
+        (*
+            <- sc_statement;;
+                => nrel_main_idtf: [Утв.(О «99 центов. Диптих»)] (* <- lang_ru;; *);;
+                => nrel_main_idtf: [Stat.(About "99 cents. Diptych")] (* <- lang_en;; *);;
+                <= nrel_sc_text_translation: ...
+                (*
+                    -> rrel_example:
+                        [«99 центов. Диптих» — две фотографии, созданные Андреасом Гурски в 1999 году. На фотографиях запечатлён интерьер одного из магазинов формата 99 Cent. На фотографиях уменьшена перспектива и использована цветная хромогенная печать. В настоящее время фотографии занимают 19-е и 23-е место в списке самых дорогих снимков в мире. ](* <- lang_ru;; *);; 
+                    -> rrel_example:
+                        ["99 cents. Diptych" are two photographs taken by Andreas Gursky in 1999. The photos show the interior of one of the 99 Cent stores. The photographs have been reduced in perspective and used color chromogenic printing. The photographs are currently ranked 19th and 23rd on the list of the most expensive photographs in the world.](* <- lang_en;; *);;
+                *);;
+                => nrel_using_constants: ...
+			(* <-concept_photograph;andreas_gursky;;*);;
+        *);;
+ 
+photo_99cent <-rrel_key_sc_element:...
+        (*
+	        <-illustration;;
+	        => nrel_main_idtf:
+		        [Рис.(«99 центов. Диптих»)](*<-lang_ru;;*);
+		        [Pic. ("99 cents. Diptych")](*<-lang_en;;*);;
+	        <= nrel_sc_text_translation:
+            ...
+	        (*
+		        -> rrel_example: "file://99cent.jpg"(* => nrel_format:format_jpg;; *);;
+	        *);;
+        *);;
+
+photo_99cent =>nrel_genre: concept_street_photography;;
+photo_99cent =>nrel_technique: concept_panoramic_photography;;
+photo_99cent =>nrel_author: andreas_gursky;;
+1999 <- number;;
+photo_99cent => nrel_creation_year: 1999;;

@@ -1,0 +1,42 @@
+concept_light_painting <- sc_node_class;;
+concept_light_painting => nrel_main_idtf:
+[light painting](* <- lang_en;; *);
+[светографика](* <- lang_ru;; *);;
+
+concept_light_painting => nrel_idtf:
+[luminography](* <- lang_en;; *);
+[люминография](* <- lang_ru;; *);;
+
+concept_light_painting => nrel_idtf:
+[светоживопись](* <- lang_ru;; *);;
+			
+concept_light_painting <- rrel_key_sc_element:...
+	(*
+	=> nrel_main_idtf:[Опр.(светографика)](*<- lang_ru;; *);;
+	=> nrel_main_idtf:[Def.(light painting)](*<- lang_en;; *);;
+	<-sc_definition;;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Светографика — техника фотографии, основанная на съёмке в темноте и экспонировании сюжета при помощи перемещаемых вручную источников света на длительной выдержке. При этом светящиеся объекты и следы от них могут использоваться в качестве части сюжета или для освещения других предметов в поле зрения фотоаппарата. ](*<- lang_ru;; *);;
+		-> rrel_example:
+			[Light painting is a photography technique based on shooting in the dark and exposing the subject using manually moved light sources at slow shutter speeds. In this case, luminous objects and traces of them can be used as part of the plot or to illuminate other objects in the camera's field of view.](*<- lang_en;; *);;
+		*);;
+	=> nrel_using_constants: ...
+			(* <-concept_photography;concept_camera;; *);;
+	*);;
+
+concept_light_painting <- rrel_key_sc_element: ...
+	(*
+		<- sc_statement;;
+		=> nrel_main_idtf:[Утв. (О светографике)] (* <- lang_ru;; *) ;;
+		=> nrel_main_idtf:[Stat.(About light painting)](*<- lang_en;; *);;
+		<= nrel_sc_text_translation: ...
+			(*	
+				-> rrel_example: [Понятие светографики применимо к многим способам получения фотографического изображения. Чаще всего основой светографического снимка являются следы, оставляемые на фотоматериале или светоприёмнике источниками света, перемещаемыми вручную. При этом получаемые фигуры могут быть как случайными, зависящими от произвольных движений фонаря, так и специально заданными, имеющими форму символов, человеческих фигур, и даже повторяющих контуры предметов в кадре.](*<-lang_ru;;*);;
+				-> rrel_example: [The concept of light painting is applicable to many ways of obtaining a photographic image. Most often, the basis of a light-graphic image is the traces left on the photographic material or light detector by manually moved light sources. In this case, the resulting figures can be either random, depending on the arbitrary movements of the lantern, or specially specified, having the form of symbols, human figures, and even repeating the contours of objects in the frame.](*<-lang_en;;*);;
+			*);;
+		=> nrel_using_constants: ...
+			(* <-concept_photograph;;*);;
+	*);;

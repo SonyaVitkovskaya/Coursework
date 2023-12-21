@@ -1,0 +1,35 @@
+concept_household_art <- sc_node_class;;
+concept_household_art => nrel_main_idtf:
+[household art](* <- lang_en;; *);
+[бытовой жанр](* <- lang_ru;; *);;
+														
+concept_household_art <- rrel_key_sc_element:...
+	(*
+	=> nrel_main_idtf:[Опр.(бытовой жанр)](*<- lang_ru;; *);;
+	=> nrel_main_idtf:[Def.(household art)](*<- lang_en;; *);;
+	<-sc_definition;;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Бытовой жанр(в фотографии) — жанр фотографического искусства, посвящённый повседневной личной и общественной жизни (как правило, современной фотографу).](*<- lang_ru;; *);;
+		-> rrel_example:
+			[Household art (in photography) is a genre of photographic art dedicated to everyday personal and social life (as a rule, to a modern photographer).](*<- lang_en;; *);;
+		*);;
+	=> nrel_using_constants: ...
+			(* <-concept_photograph;nrel_genre;;  *);;
+	*);;
+
+concept_household_art <- rrel_key_sc_element: ...
+	(*
+		<- sc_statement;;
+		=> nrel_main_idtf: [Утв. (О бытовом жанре в фотографии)] (* <- lang_ru;; *) ;;
+		=> nrel_main_idtf: [Stat. (About the household genre in photography)] (* <- lang_en;; *) ;;
+		<= nrel_sc_text_translation: ...
+			(*	
+				-> rrel_example: [ В ранних бытовых съемках фотограф, подобно художнику, находил натурщиков, одевал их в соответствующие одежды, помещал в нужный интерьер, выстраивал композицию, напоминающую картину. Важным рубежом для развития бытовой фотографии стало появление высокочувствительных материалов и моментальных затворов. Сразу отпала необходимость в натурщиках, которые принимали необходимые позы и долго сохраняли их перед объективом. Натурщиков заменили случайные прохожие, все те, кто привлекал фотографа. Легкость в получении моментальных снимков привела к «взрыву» произведений на бытовые темы. Практически каждый владелец  фотоаппарата получил возможность фиксировать сценки из повседневной жизни.](*<-lang_ru;;*);;
+				-> rrel_example: [In early household photography, the photographer, like an artist, found sitters, dressed them in appropriate clothes, placed them in the right interior, and built a composition that resembled a painting. An important frontier for the development of everyday photography was the emergence of highly sensitive materials and instant shutters. Immediately there was no need for sitters who took the necessary poses and kept them in front of the lens for a long time. The sitters were replaced by random passers-by, all those who attracted the photographer. The ease of obtaining snapshots led to an "explosion" of works on everyday topics. Almost every camera owner got the opportunity to capture scenes from everyday life.](*<-lang_en;;*);;
+			*);;
+		=> nrel_using_constants: ...
+			(* <-concept_photography;concept_photograph;concept_camera_sensitivity;concept_composition;;*);;
+	*);;

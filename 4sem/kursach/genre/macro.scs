@@ -1,0 +1,66 @@
+concept_macro_photography <- sc_node_class;;
+concept_macro_photography => nrel_main_idtf:
+[macro photography](* <- lang_en;; *);
+[макрофотография](* <- lang_ru;; *);;
+concept_macro_photography => nrel_idtf:
+[макросъемка](* <- lang_ru;; *);;
+
+concept_macro_photography <- rrel_key_sc_element:...
+	(*
+	=> nrel_main_idtf:[Опр.1 (макрофотография)](*<- lang_ru;; *);;
+	=> nrel_main_idtf:[Def.1 (macro photography)](*<- lang_en;; *);;
+	<-sc_definition;;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Макрофотография — это жанр фотоискусства, в котором маленькие объекты снимаются с близкого расстояния и выглядят намного крупнее, чем в реальности.](*<- lang_ru;; *);;
+		-> rrel_example:
+			[Macro photography is a genre of photographic art in which small objects are shot at close range and look much larger than in reality.](*<- lang_en;; *);;
+		*);;
+	=> nrel_using_constants: ...
+			(* <-concept_photography;nrel_genre;;  *);;
+	*);;
+	
+concept_macro_photography <- rrel_key_sc_element:...
+	(*
+	=> nrel_main_idtf:[Опр.2 (макросъемка)](*<- lang_ru;; *);;
+	=> nrel_main_idtf:[Def.2 (macro photography)](*<- lang_en;; *);;
+	<-sc_definition;;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Макросъёмка — это изображение чего-либо в увеличенном виде.](*<- lang_ru;; *);;
+		-> rrel_example:
+			[Macro photography is an enlarged view of something.](*<- lang_en;; *);;
+		*);;
+	*);;
+
+concept_macro_photography <- rrel_key_sc_element: ...
+	(*
+		<- sc_statement;;
+		=> nrel_main_idtf: [Утв.1 (О макрофотографии)] (* <- lang_ru;; *) ;;
+		=> nrel_main_idtf: [Stat.1 (About the macro photography)] (* <- lang_en;; *) ;;
+		<= nrel_sc_text_translation: ...
+			(*	
+				-> rrel_example: [Обычно к макрофотографии относят снимки в масштабе 1:1 или меньше. Это означает что запечатленные предметы или животные не превышают сенсор камеры и заполняют весь кадр. Макросъемка позволяет в мельчайших деталях рассмотреть привычные, но не привлекающие внимания вещи. Чаще всего в объектив любителей этого жанра попадают насекомые, растения, улитки, капельки росы и снежинки.](*<-lang_ru;;*);;
+				-> rrel_example: [Typically, macro photography refers to pictures at a scale of 1:1 or less. This means that the captured objects or animals do not exceed the camera sensor and fill the entire frame. Macro photography allows you to see in the smallest detail the familiar, but not attracting things. Most often, insects, plants, snails, dew drops and snowflakes fall into the lens of fans of this genre.](*<-lang_en;;*);;
+			*);;
+		=> nrel_using_constants: ...
+			(* <-concept_lens;concept_photograph;nrel_genre;;*);;
+	*);;
+	
+concept_macro_photography <- rrel_key_sc_element: ...
+	(*
+		<- sc_statement;;
+		=> nrel_main_idtf: [Утв.2 (О макрофотографии)] (* <- lang_ru;; *) ;;
+		=> nrel_main_idtf: [Stat.2 (About the macro photography)] (* <- lang_en;; *) ;;
+		<= nrel_sc_text_translation: ...
+			(*	
+				-> rrel_example: [Более широко термин макросъёмка употребляется в случаях фотографирования с более близких расстояний, чем расстояния, указанные на шкале дистанций объективов фотокамер (минимальная дистанция фокусировки у большинства объективов зеркальных фотоаппаратов около 0,5 метра). Объектив создаёт действительное увеличенное изображение объекта съёмки на любом светочувствительном материале — фотоплёнка, фотопластинка, фотобумага, киноплёнка или на электронном устройстве.](*<-lang_ru;;*);;
+				-> rrel_example: [More widely, the term macro photography is used in cases of photographing from closer distances than the distances indicated on the distance scale of camera lenses (the minimum focusing distance for most lenses of SLR cameras is about 0.5 meters, for rangefinder camera lenses - about 1 meter). The lens creates a real enlarged image of the subject on any light-sensitive material - photographic film, photographic plate, photographic paper, film or on an electronic device.](*<-lang_en;;*);;
+			*);;
+		=> nrel_using_constants: ...
+			(* <-concept_photography;concept_lens;concept_camera_sensitivity;concept_slr_camera;concept_camera_roll;concept_camera;concept_focus;;*);;
+	*);;

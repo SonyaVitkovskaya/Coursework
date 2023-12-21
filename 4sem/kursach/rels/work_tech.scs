@@ -1,0 +1,26 @@
+nrel_work_technique <- sc_node_norole_relation;;
+
+nrel_work_technique => nrel_main_idtf: [work technique*]
+	(*
+		<-lang_en;;
+	*);;
+nrel_work_technique => nrel_main_idtf: [техника работы*]
+	(*
+		<-lang_ru;;
+	*);;
+
+nrel_work_technique <- rrel_key_sc_element: ...
+	(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Опр.(техника работы)] 
+			(* <- lang_ru;; *) ;;
+			=> nrel_main_idtf: [Def.(work technique)] 
+			(* <- lang_en;; *) ;;
+		<= nrel_sc_text_translation: ...
+			(*	
+				-> rrel_example: [Техника работы* — бинарное отношение, связывающее фотографа с одной или несколькими техниками, в которых он работает.]
+				(*<-lang_ru;;*);;
+				-> rrel_example: [Work technique* is a binary relationship that links a photographer to one or more of the techniques in which he works.]
+				(*<-lang_en;;*);;
+			*);;
+	*);;

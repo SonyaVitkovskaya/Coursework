@@ -1,0 +1,40 @@
+philippe_halsman <- concept_photographer;;
+philippe_halsman => nrel_main_idtf: 
+[Philippe Halsman](* <- lang_en;; *); 
+[Филипп Халсман](* <- lang_ru;; *);;
+
+philippe_halsman <- rrel_key_sc_element: ...
+        (*
+            <- statement;;
+                => nrel_main_idtf: [Утв. (О Филиппе Халсмане)] (* <- lang_ru;; *);;
+                => nrel_main_idtf: [Stat. (About Philippe Halsman)] (* <- lang_en;; *);;
+                <= nrel_sc_text_translation: ...
+                (*
+                    -> rrel_example:
+                        [Самым любимым и основным жанром фотографа была портретная съемка. «Меня всегда интересовали люди», – писал он, – «Хороший портрет должен – и сегодня и через сто лет – показывать, как человек выглядел и что он из себя представлял». В другой раз Халсман остановился на этом более подробно: «Этого нельзя достичь, заставляя человека принять ту или иную позу или ставя его голову под определенным углом. Для этого нужно провоцировать "жертву", развлекать его шутками, убаюкивать тишиной, задавать ему такие дерзкие вопросы, которые даже лучший друг побоялся бы задать».](* <- lang_ru;; *);; 
+                    -> rrel_example:
+                        [The most favorite and main genre of the photographer was portrait photography. “I have always been interested in people,” he wrote, “A good portrait should – both today and in a hundred years – show how a person looked and what he was.” On another occasion, Halsman elaborated on this in more detail: “This cannot be achieved by forcing a person into this or that posture or placing his head at a certain angle. To do this, you need to provoke the “victim”, entertain him with jokes, lull him into silence, ask him such impudent questions that even his best friend would be afraid to ask.](* <- lang_en;; *);;
+                *);;
+            =>nrel_using_constants:...(*<-concept_photographer; concept_portrait;nrel_genre;;*);;
+        *);;
+ 
+philippe_halsman <-rrel_key_sc_element:...
+        (*
+	        <-illustration;;
+	        => nrel_main_idtf:
+		        [Рис. (Филипп Халсман)](*<-lang_ru;;*);
+		        [Pic. (Philippe Halsman)](*<-lang_en;;*);;
+	        <= nrel_sc_text_translation:
+            ...
+	        (*
+		        -> rrel_example: "file://halsman.jpeg"(* => nrel_format:format_jpg;; *);;
+	        *);;
+        *);;
+        
+philippe_halsman =>nrel_work_technique:
+concept_traditional_photography;;
+
+philippe_halsman <= nrel_doer:
+concept_staged_photography;
+concept_portrait;
+concept_household_art;;

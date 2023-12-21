@@ -1,0 +1,57 @@
+concept_camera_roll <- sc_node_class;;
+concept_camera_roll => nrel_main_idtf:
+[camera roll](* <- lang_en;; *);
+[фотопленка](* <- lang_ru;; *);;
+concept_camera_roll => nrel_idtf:
+[film](* <- lang_en;; *);
+[photographic film](* <- lang_en;; *);
+[пленка](* <- lang_ru;; *);;
+				 					
+concept_camera_roll <- rrel_key_sc_element:...
+	(*
+	=> nrel_main_idtf:[Опр.(фотопленка)](*<- lang_ru;; *);;
+	=> nrel_main_idtf:[Def.(camera roll)](*<- lang_en;; *);;
+	<-sc_definition;;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Фотоплёнка — фотоматериал на гибкой полимерной подложке, предназначенный для различных видов фотографии. Представляет собой прозрачную основу с нанесённой на неё светочувствительной фотоэмульсией. В результате экспонирования в эмульсии формируется скрытое изображение, которое при дальнейшей химической обработке преобразуется в видимое.](*<- lang_ru;;*);;
+		-> rrel_example:
+			[Photographic film is a photographic material on a flexible polymer substrate intended for various types of photography. It is a transparent base with a light-sensitive photographic emulsion applied to it. As a result of exposure in the emulsion, a latent image is formed, which, upon further chemical processing, is converted into a visible one.](*<- lang_en;; *);;
+		*);;
+	=> nrel_using_constants: ...
+			(* <-concept_photography;concept_photograph;;*);;
+	*);;
+
+concept_camera_roll <- rrel_key_sc_element: ...
+	(*
+		<- sc_statement;;
+		=> nrel_main_idtf:[Утв. (О строении фотопленки)] (* <- lang_ru;; *) ;;
+		=> nrel_main_idtf:[Stat.(About the structure of photographic film)](*<- lang_en;; *);;
+		<= nrel_sc_text_translation: ...
+			(*	
+				-> rrel_example: [Фотоплёнка состоит из одного или нескольких эмульсионных слоёв, нанесённых на подложку. В современных чёрно-белых или монохромных фотоплёнках используется один эмульсионный слой, чаще всего состоящий из двух полуслоёв с различной светочувствительностью. Цветные фотоплёнки имеют более сложное строение. Они состоят из трёх эмульсионных слоёв с разной спектральной чувствительностью. Верхний несенсибилизированный слой чувствителен к синему свету, средний — к сине-зелёному, а нижний — к синему и красному излучениям. Расположенный под верхним синечувствительным слоем жёлтый фильтровый подслой задерживает синий свет, не пропуская его к нижним слоям, и обесцвечивается при лабораторной обработке.](*<-lang_ru;;*);;
+				-> rrel_example: [Photographic film consists of one or more emulsion layers deposited on a substrate. Modern black-and-white or monochrome photographic films use one emulsion layer, most often consisting of two half-layers with different photosensitivity. Color photographic films have a more complex structure. They consist of three emulsion layers with different spectral sensitivity. The top unsensitized layer is sensitive to blue light, the middle layer is sensitive to blue-green light, and the bottom layer is sensitive to blue and red light. Located under the upper blue-sensitive layer, the yellow filter layer retains blue light, preventing it from passing to the lower layers, and becomes discolored during laboratory processing.](*<-lang_en;;*);;
+			*);;
+	*);;
+
+concept_camera_roll <-rrel_key_sc_element:...
+        (*
+	        <-illustration;;
+	        => nrel_main_idtf:
+		        [Рис. (Фотопленка)](*<-lang_ru;;*);
+		        [Pic. (Camera roll)](*<-lang_en;;*);;
+	        <= nrel_sc_text_translation:
+            ...
+	        (*
+		        -> rrel_example: "file://film.jpg"(* => nrel_format:format_jpg;; *);;
+	        *);;
+        *);;
+        
+
+
+
+
+
+

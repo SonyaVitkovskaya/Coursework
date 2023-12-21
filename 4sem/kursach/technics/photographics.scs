@@ -1,0 +1,38 @@
+concept_photographics <- sc_node_class;;
+concept_photographics => nrel_main_idtf:
+[photographics](* <- lang_en;; *);
+[фотографика](* <- lang_ru;; *);;
+														
+concept_photographics <- rrel_key_sc_element:...
+	(*
+	=> nrel_main_idtf:[Опр.(фотографика)](*<- lang_ru;; *);;
+	=> nrel_main_idtf:[Def.(photographics)](*<- lang_en;; *);;
+	<-sc_definition;;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Фотографика — вид изобразительного искусства, основанный на трансформации фотографического изображения в графический художественный образ.](*<- lang_ru;; *);;
+		-> rrel_example:
+			[Photographics is a type of fine art based on the transformation of a photographic image into a graphic artistic image.](*<- lang_en;; *);;
+		*);;
+	=> nrel_using_constants: ...
+			(* <-concept_photograph;; *);;
+	*);;
+
+concept_photographics <- rrel_key_sc_element: ...
+	(*
+		<- sc_statement;;
+		=> nrel_main_idtf: [Утв.(О фотографике)](* <- lang_ru;; *);;
+		=> nrel_main_idtf:[Stat.(About photographics)](*<- lang_en;; *);;
+		
+		<= nrel_sc_text_translation: ...
+			(*	
+				-> rrel_example: [В художественной фотографии фотографикой называется совокупность приёмов трансформации снимка в процессе фотопечати.](*<-lang_ru;;*);;
+				-> rrel_example: [In artistic photography, photographics is a set of techniques for transforming an image in the process of photo printing.](*<-lang_en;;*);;
+			*);;
+		=> nrel_using_constants: ...
+			(* <-concept_photography;concept_photograph;;*);;
+	*);;
+	
+

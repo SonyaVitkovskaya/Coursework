@@ -1,0 +1,50 @@
+photo_vj_day_in_times_square <- concept_photograph;;
+photo_vj_day_in_times_square => nrel_main_idtf: 
+["V-J Day in Times Square"](* <- lang_en;; *); 
+[«День Победы над Японией на Таймс-сквер»](* <- lang_ru;; *);;
+
+photo_vj_day_in_times_square => nrel_idtf: 
+[«V-Day»](* <- lang_en;; *);  
+[«The Kiss](* <- lang_en;; *);  
+[«День Победы» ](* <- lang_ru;; *);
+[«Поцелуй на Таймс-сквер» ](* <- lang_ru;; *);
+[«Поцелуй» ](* <- lang_ru;; *);;
+
+photo_vj_day_in_times_square <- rrel_key_sc_element: ...
+        (*
+            <- sc_statement;;
+                => nrel_main_idtf: [Утв.(О «День Победы над Японией на Таймс-сквер»)] (* <- lang_ru;; *);;
+                => nrel_main_idtf: [Stat.(About "V-J Day in Times Square")] (* <- lang_en;; *);;
+                <= nrel_sc_text_translation: ...
+                (*
+                    -> rrel_example:
+                        [14 августа 1945 года Япония приняла условия капитуляции. Новость об этом быстро распространилась по США: на улицы вышло огромное количество людей, и находившийся в тот день в Нью-Йорке фотожурналист Альфред Эйзенштадт бросился снимать празднование. В тот день он был на Таймс-сквер, где снимал многих, однако один молодой моряк сразу привлёк его внимание. Как позже вспоминал Эйзенштадт:
+
+    "Он носился по всей улице, хватал всех женщин, которых видел - неважно, были они пожилыми, дородными или стройными. Я бежал перед ним со своей «Лейкой», оборачиваясь и пытаясь сделать снимок, однако ни один из них мне не нравился. И тут, внезапно - как вспышка - я увидел, что он схватил что-то белое. Я повернулся и нажал на кнопку в тот самый момент, когда он поцеловал медсестру. Если бы она была одета во что-то тёмное, я бы никогда не сфотографировал их. То же самое - если бы на нем была светлая форма, снимка бы не было."](* <- lang_ru;; *);; 
+                    -> rrel_example:
+                        [On August 14, 1945, Japan accepted the terms of surrender. The news of this quickly spread throughout the United States: a huge number of people took to the streets, and photojournalist Alfred Eisenstadt, who was in New York that day, rushed to film the celebration. That day he was in Times Square, where he took pictures of many, but one young sailor immediately attracted his attention. As Eisenstadt later recalled:
+
+     “He ran all over the street, grabbing all the women he saw - it didn’t matter if they were old, portly or slim. I ran in front of him with my Leica, turning around and trying to take a picture, but I didn’t like any of them. And then, suddenly - like a flash - I saw that he grabbed something white. I turned and pressed the button at the very moment when he kissed the nurse. If she was wearing something dark, I would never take a picture them. The same thing - if he had a light uniform on, the picture would not have been."](* <- lang_en;; *);;
+                *);;
+                => nrel_using_constants: ...
+			(* <-concept_photograph;;*);;
+        *);;
+ 
+photo_vj_day_in_times_square <-rrel_key_sc_element:...
+        (*
+	        <-illustration;;
+	        => nrel_main_idtf:
+		        [Рис.(«День Победы над Японией на Таймс-сквер»)](*<-lang_ru;;*);
+		        [Pic. ("V-J Day in Times Square")](*<-lang_en;;*);;
+	        <= nrel_sc_text_translation:
+            ...
+	        (*
+		        -> rrel_example: "file://kiss.jpg"(* => nrel_format:format_jpg;; *);;
+	        *);;
+        *);;
+
+photo_vj_day_in_times_square =>nrel_genre: concept_street_photography;;
+photo_vj_day_in_times_square =>nrel_technique: concept_traditional_photography;;
+photo_vj_day_in_times_square =>nrel_author: alfred_eisenstaedt;;
+1945 <- number;;
+photo_vj_day_in_times_square => nrel_creation_year: 1945;;

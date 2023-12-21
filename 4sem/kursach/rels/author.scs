@@ -1,0 +1,33 @@
+nrel_author <- sc_node_norole_relation;;
+nrel_author <- sc_node_norole_relation;;
+nrel_author => nrel_main_idtf:
+[author*](*<-lang_en;;*);
+[автор*]	(*<-lang_ru;;*);;
+	
+nrel_author <- rrel_key_sc_element: ...
+	(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Опр.(автор)] (* <- lang_ru;; *) ;;
+		=> nrel_main_idtf:[Def.(author)](*<- lang_en;; *);;
+		<= nrel_sc_text_translation: ...
+			(*	
+				-> rrel_example: [Автор — творец всякого, литературного, музыкального или любого художественного произведения и вообще всякого произведения ума, воплощённого искусством. Помимо этого, под автором понимают создателя чисто научных работ, кода программного обеспечения, а также любых иных текстов.]
+				(*<-lang_ru;;*);;
+				-> rrel_example: [The author is the creator of any literary, musical or any work of art, and in general any work of the mind embodied in art. In addition, the author is understood as the creator of purely scientific works, software code, as well as any other texts.]
+				(*<-lang_en;;*);;
+			*);;
+	*);;
+
+nrel_author <- rrel_key_sc_element: ...
+	(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Опр.(автор)] (* <- lang_ru;; *) ;;
+		=> nrel_main_idtf:[Def.(author)](*<- lang_en;; *);;
+		<= nrel_sc_text_translation: ...
+			(*	
+				-> rrel_example: [Автор — физическое лицо, творческим трудом которого создано произведение.]
+				(*<-lang_ru;;*);;
+				-> rrel_example: [An author is a natural person whose creative work created a work.]
+				(*<-lang_en;;*);;
+			*);;
+	*);;

@@ -1,0 +1,35 @@
+concept_multispectral_imaging <- sc_node_class;;
+concept_multispectral_imaging => nrel_main_idtf:
+[multispectral imaging](* <- lang_en;; *);
+[спектрозональная съемка](* <- lang_ru;; *);;
+			
+concept_multispectral_imaging <- rrel_key_sc_element:...
+	(*
+	=> nrel_main_idtf:[Опр.(спектрозональная съемка)](*<- lang_ru;; *);;
+	=> nrel_main_idtf:[Def.(light painting)](*<- lang_en;; *);;
+	<-sc_definition;;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Спектрозональная съёмка — вид фотосъёмки, в процессе которой происходит одновременное получение фотографических изображений объекта в различных участках (зонах) спектра электромагнитных волн. ](*<- lang_ru;; *);;
+		-> rrel_example:
+			[Spectrozonal photography is a type of photography, during which the simultaneous acquisition of photographic images of an object in different parts (zones) of the spectrum of electromagnetic waves takes place.](*<- lang_en;; *);;
+		*);;
+	=> nrel_using_constants: ...
+			(* <-concept_photography;concept_photograph;; *);;
+	*);;
+
+concept_multispectral_imaging <- rrel_key_sc_element: ...
+	(*
+		<- sc_statement;;
+		=> nrel_main_idtf:[Утв. (О спектрозональной съемке)] (* <- lang_ru;; *) ;;
+		=> nrel_main_idtf:[Stat.(About multispectral imaging)](*<- lang_en;; *);;
+		<= nrel_sc_text_translation: ...
+			(*	
+				-> rrel_example: [Съёмка в лучах, невидимых для человеческого зрения, позволяет получать необычные художественные эффекты. Например, инфракрасная фотография, популярная среди фотохудожников, придаёт специфический вид ландшафтам, на которых растительность выглядит почти белой, а небо чёрным. В аэрофотографии инфракрасная съёмка позволяет получать чёткие снимки с больших высот, поскольку излучение этого диапазона практически не рассеивается атмосферой.](*<-lang_ru;;*);;
+				-> rrel_example: [Shooting in rays invisible to human vision allows to get unusual artistic effects. For example, infrared photography, popular with photo artists, lends a particular look to landscapes where the vegetation looks almost white and the sky looks black. In aerial photography, infrared photography allows you to get clear images from high altitudes, since the radiation in this range is practically not scattered by the atmosphere.](*<-lang_en;;*);;
+			*);;
+		=> nrel_using_constants: ...
+			(* <-concept_photography; concept_aerial_photography;;*);;
+	*);;

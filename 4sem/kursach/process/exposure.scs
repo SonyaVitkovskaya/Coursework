@@ -1,0 +1,36 @@
+concept_camera_exposure <- sc_node_class;;
+concept_camera_exposure => nrel_main_idtf:
+[shutter speed](* <- lang_en;; *);
+[выдержка](* <- lang_ru;; *);;
+
+concept_camera_exposure <- rrel_key_sc_element:...
+	(*
+	<-sc_definition;;
+	=> nrel_main_idtf:[Опр.(выдержка)](*<- lang_ru;; *);;
+	=> nrel_main_idtf:[Def.(shutter speed)](*<- lang_en;; *);;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Выдержка — интервал времени, в течение которого свет экспонирует участок светочувствительного материала или светочувствительной матрицы. Одна из двух составляющих экспозиции, вторая из которых — освещённость — регулируется диафрагмой.](*<- lang_ru;; *);;
+		-> rrel_example:
+			[Shutter speed is the time interval during which light exposes an area of a photosensitive material or a photosensitive matrix. One of the two components of the exposure, the second of which - illumination - is controlled by the aperture.](*<- lang_en;; *);;
+		*);;
+		=> nrel_using_constants: ...
+			(* <-concept_exposition;;*);;
+	*);;
+
+concept_camera_exposure <- rrel_key_sc_element: ...
+	(*
+		<- sc_statement;;
+		=> nrel_main_idtf: [Утв. (О выдержке)](* <- lang_ru;; *) ;;
+		=> nrel_main_idtf:[Stat.(About shutter speed)](*<- lang_en;; *);;
+		<= nrel_sc_text_translation: ...
+			(*	
+				-> rrel_example: [В первых фотоаппаратах выдержка регулировалась крышкой объектива: при её снятии выдержка начиналась, а после надевания — заканчивалась. При фотопечати время выдержки задаётся включением и выключением лампы фотоувеличителя или копировального станка. В современной фото- и кинотехнике регулирование выдержки происходит при помощи фотографического затвора или его кинематографической разновидности — обтюратора. Полупроводниковые матрицы не требуют физического перекрытия света для окончания экспозиции, поэтому видеокамеры и простейшие цифровые фотоаппараты для регулировки выдержки используют ограничение времени считывания заряда с элементов (электронный затвор) и не нуждаются в механическом затворе.] 	(*<-lang_ru;;*);;
+				> rrel_example: [In the first cameras, the shutter speed was regulated by the lens cap: when it was removed, the shutter speed began, and after putting it on, it ended. In photo printing, the exposure time is set by turning the lamp of the enlarger or copy machine on and off. In modern photographic and film technology, shutter speed is controlled using a photographic shutter or its cinematic variety - a shutter. Semiconductor matrices do not require a physical overlap of light to end the exposure, so camcorders and the simplest digital cameras use the time limit for reading the charge from the elements (electronic shutter) to adjust the shutter speed and do not need a mechanical shutter.](*<-lang_en;;*);;
+			*);;
+			=> nrel_using_constants: ...
+			(* <-concept_camera;;*);;
+	*);;
+

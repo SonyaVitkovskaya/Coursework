@@ -1,0 +1,43 @@
+photo_rhein <- concept_photograph;;
+photo_rhein => nrel_main_idtf: 
+[«Rhein II»](* <- lang_en;; *); 
+["Рейн II"](* <- lang_ru;; *);;
+
+photo_rhein <- rrel_key_sc_element: ...
+        (*
+            <- sc_statement;;
+                => nrel_main_idtf: [Утв.(О "Рейн II")] (* <- lang_ru;; *);;
+                => nrel_main_idtf: [Stat.(About «Rhein II»)] (* <- lang_en;; *);;
+                <= nrel_sc_text_translation: ...
+                (*
+                    -> rrel_example:
+                        [«Рейн II» — фотография, сделанная немецким фотохудожником Андреасом Гурски в 1999 году. В 2011 году снимок был продан на аукционе Christie’s в Нью-Йорке за 4,3 миллиона долларов, что делает его второй самой дорогой когда-либо проданной фотографией (самой дорогой на сегодняшний день проданной фотографией является «Фантом» Питера Лика).
+
+На снимке Рейн течёт под пасмурным небом горизонтально между зелёными дамбами. Под первой дамбой видны велосипедная и пешеходная дорожки. Посторонние детали, такие как электростанция и прочие портовые сооружения на заднем плане, а также человек, выгуливавший свою собаку, на переднем плане, Гурски удалил цифровым способом. Оправдывая эту манипуляцию с изображением, Гурски сказал: «Как ни парадоксально, этот вид на Рейн не мог быть получен на месте, доработка была необходима, чтобы обеспечить точный образ современной реки».](* <- lang_ru;; *);; 
+                    -> rrel_example:
+                        ["Rhein II" is a photograph taken by German photographer Andreas Gursky in 1999. In 2011, it sold at Christie's New York for $4.3 million, making it the second most expensive photograph ever sold (the most expensive photograph sold to date is Peter Lik's The Phantom).
+
+In the picture, the Rhine flows horizontally between green dikes under an overcast sky. Bicycle and pedestrian paths are visible under the first dam. Extraneous details, such as a power plant and other port facilities in the background, as well as a man walking his dog in the foreground, were digitally removed by Gursky. Justifying this manipulation of the image, Gursky said, "Ironically, this view of the Rhine could not have been obtained locally, rework was necessary to provide an accurate image of the modern river."](* <- lang_en;; *);;
+                *);;
+                => nrel_using_constants: ...
+			(* <-concept_photograph;andreas_gursky;;*);;
+        *);;
+ 
+photo_rhein <-rrel_key_sc_element:...
+        (*
+	        <-illustration;;
+	        => nrel_main_idtf:
+		        [Рис.("Рейн II")](*<-lang_ru;;*);
+		        [Pic. («Rhein II»)](*<-lang_en;;*);;
+	        <= nrel_sc_text_translation:
+            ...
+	        (*
+		        -> rrel_example: "file://rein.jpg"(* => nrel_format:format_jpg;; *);;
+	        *);;
+        *);;
+
+photo_rhein =>nrel_genre: concept_scenery;;
+photo_rhein =>nrel_technique: concept_traditional_photography; concept_panoramic_photography;;
+photo_rhein =>nrel_author: andreas_gursky;;
+1999 <- number;;
+photo_rhein => nrel_creation_year: 1999;;

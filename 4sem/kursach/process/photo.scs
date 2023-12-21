@@ -1,0 +1,48 @@
+concept_photograph <- sc_node_class;;
+concept_photograph => nrel_main_idtf:
+[photograph](* <- lang_en;; *);
+[фотография](* <- lang_ru;; *);;
+concept_photograph => nrel_idtf:
+[photo](* <- lang_en;; *);
+[фото](* <- lang_ru;; *);
+[image](* <- lang_en;; *);
+[picture](* <- lang_en;; *);
+[фотоснимок](* <- lang_ru;; *);
+[снимок](* <- lang_ru;; *);;
+		
+concept_photograph <- rrel_key_sc_element:...
+	(*
+	
+	<-sc_definition;;
+	=> nrel_main_idtf:[Опр.(фотография)](*<- lang_ru;; *);;
+	=> nrel_main_idtf:[Def.(photograph)](*<- lang_en;; *);;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Фотография — это изображение, создаваемое светом, падающим на светочувствительную поверхность, обычно фотопленку или электронный датчик изображения.](*<- lang_ru;; *);;
+		-> rrel_example:
+			[A photograph is an image created by light falling on a photosensitive surface, usually a photographic film or an electronic image sensor.](*<- lang_en;; *);;
+		*);;
+		
+		=> nrel_using_constants: ...
+			(* <-concept_camera_roll;;*);;
+	*);;
+
+concept_photograph <- rrel_key_sc_element: ...
+	(*
+	
+	<-sc_definition;;
+	=> nrel_main_idtf:[Опр.(фотография)](*<- lang_ru;; *);;
+	=> nrel_main_idtf:[Def.(photograph)](*<- lang_en;; *);;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Фотография — это конечное изображение, полученное в результате фотографического процесса и рассматриваемое человеком непосредственно.](*<- lang_ru;; *);;
+		-> rrel_example:
+			[A photograph is the final image obtained as a result of the photographic process and viewed directly by a person.](*<- lang_en;; *);;
+		*);;
+		=> nrel_using_constants: ...
+			(* <-concept_photography;;*);;
+	*);;

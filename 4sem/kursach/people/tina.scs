@@ -1,0 +1,40 @@
+tina_barney <- concept_photographer;;
+tina_barney => nrel_main_idtf: 
+[Tina Barney](* <- lang_en;; *);
+[Тина Барни](* <- lang_ru;; *);;
+
+tina_barney <- rrel_key_sc_element: ...
+        (*
+            <- statement;;
+                => nrel_main_idtf: [Утв. (О Тине Барни)] (* <- lang_ru;; *);;
+                => nrel_main_idtf: [Stat. (About Tina Barney)] (* <- lang_en;; *);;
+                <= nrel_sc_text_translation: ...
+                (*
+                    -> rrel_example:
+                        [Барни наиболее известна созданием широкоформатных красочных фотографий своей богатой семьи с Восточного побережья. Изображения находятся на грани между откровенной и картинной фотографией. Богатые стали эстетикой в творчестве Барни, но ее «очарование заключается в повторении традиций и ритуалов. Идея о том, что семьи, независимо от того, откуда они родом, делают одно и то же». Совсем недавно ее работы были показаны в Государственном театре Нью-Йорка в Нью-Йорке в 2011 году; Центр искусств Барбикан, Лондон; Museum Folkwang в Эссене, Museum der Art Moderne в Зальцбурге и другие.](* <- lang_ru;; *);; 
+                    -> rrel_example:
+                        [Barney is most well known for creating large format, colorful photographs of her wealthy, East Coast family. The images straddle the line between candid and tableau photography. The wealthy became an aesthetic in Barney's work, her but "fascination is with the repetition of traditions and rituals. The idea that families no matter where they come from, kind of do the same thing." More recently her work has been shown at the New York State Theater in New York, in 2011; The Barbican Art Centre, London; Museum Folkwang in Essen, Museum der Art Moderne, Salzburg, and others.](* <- lang_en;; *);;
+                *);;
+            =>nrel_using_constants:...(*<-concept_photographer; concept_portrait;nrel_genre;;*);;
+        *);;
+ 
+tina_barney <-rrel_key_sc_element:...
+        (*
+	        <-illustration;;
+	        => nrel_main_idtf:
+		        [Рис. (Тина Барни)](*<-lang_ru;;*);
+		        [Pic. (Tina Barney)](*<-lang_en;;*);;
+	        <= nrel_sc_text_translation:
+            ...
+	        (*
+		        -> rrel_example: "file://barney.jpg"(* => nrel_format:format_jpg;; *);;
+	        *);;
+        *);;
+        
+tina_barney =>nrel_work_technique:
+concept_traditional_photography;;
+
+tina_barney <= nrel_doer:
+concept_portrait;
+concept_staged_photography;
+concept_household_art;;

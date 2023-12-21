@@ -1,0 +1,35 @@
+concept_panoramic_photography <- sc_node_class;;
+concept_panoramic_photography => nrel_main_idtf:
+[panoramic photography](* <- lang_en;; *);
+[панорамная фотография](* <- lang_ru;; *);;
+									
+concept_panoramic_photography <- rrel_key_sc_element:...
+	(*
+	=> nrel_main_idtf:[Опр.(панорамная фотография)](*<- lang_ru;; *);;
+	=> nrel_main_idtf:[Def.(panoramic photography)](*<- lang_en;; *);;
+	<-sc_definition;;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Панорамная фотография — разновидность фотографии с большим горизонтальным углом обзора, вплоть до 360°.](*<- lang_ru;; *);;
+		-> rrel_example:
+			[Panoramic photography is a type of photography with a large horizontal viewing angle, up to 360°.](*<- lang_en;; *);;
+		*);;
+	=> nrel_using_constants: ...
+			(* <-concept_photography;; *);;
+	*);;
+
+concept_panoramic_photography <- rrel_key_sc_element: ...
+	(*
+		<- sc_statement;;
+		=> nrel_main_idtf:[Утв. (О стереографии)] (* <- lang_ru;; *) ;;
+		=> nrel_main_idtf:[Stat.(About panoramic photography)](*<- lang_en;; *);;
+		<= nrel_sc_text_translation: ...
+			(*	
+				-> rrel_example: [При панорамной фотосъёмке используется специальная фотоаппаратура или цифровое объединение нескольких обычных фотоснимков, снятых с таким расчётом, чтобы охватить большое пространство. Панорамная фотография наиболее востребована при съёмке ландшафтов и интерьеров. Первые панорамные фотоснимки были сделаны с помощью специального фотоаппарата, снимающего поворотным объективом на изогнутую пластинку. В современной цифровой фотографии чаще всего съёмка ведётся обычной аппаратурой с последующим склеиванием снимков при помощи специальных приложений. При этом кроме обычного цилиндрического обзора возможны и другие, в том числе и сферический. ](*<-lang_ru;;*);;
+				-> rrel_example: [Panoramic photography uses special cameras or digital combinations of several ordinary photographs taken in such a way as to cover a large area. Panoramic photography is most in demand when shooting landscapes and interiors. The first panoramic photographs were taken with a special camera that shoots with a rotating lens on a curved plate. In modern digital photography, most often shooting is carried out with conventional equipment, followed by gluing images using special applications. At the same time, in addition to the usual cylindrical view, others are possible, including a spherical one.](*<-lang_en;;*);;
+			*);;
+		=> nrel_using_constants: ...
+			(* <-concept_lens;concept_photograph;concept_camera;concept_photography;;*);;
+	*);;

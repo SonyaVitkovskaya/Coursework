@@ -1,0 +1,48 @@
+concept_photogram <- sc_node_class;;
+concept_photogram => nrel_main_idtf:
+[photogram](* <- lang_en;; *);
+[фотограмма](* <- lang_ru;; *);;
+				 					
+concept_photogram <- rrel_key_sc_element:...
+	(*
+	=> nrel_main_idtf:[Опр.(фотограмма)](*<- lang_ru;; *);;
+	=> nrel_main_idtf:[Def.(photogram)](*<- lang_en;; *);;
+	<-sc_definition;;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Фотограмма — получение изображения фотохимическим способом, без применения фотоаппарата.](*<- lang_ru;;*);;
+		-> rrel_example:
+			[Photogram — obtaining an image by a photochemical method, without the use of a camera.](*<- lang_en;; *);;
+		*);;
+	=> nrel_using_constants: ...
+			(* <-concept_photograph;concept_camera;;*);;
+	*);;
+
+concept_photogram <- rrel_key_sc_element: ...
+	(*
+		<- sc_statement;;
+		=> nrel_main_idtf:[Утв. (О фотограмме)] (* <- lang_ru;; *) ;;
+		=> nrel_main_idtf:[Stat.(About photogram)](*<- lang_en;; *);;
+		<= nrel_sc_text_translation: ...
+			(*	
+				-> rrel_example: [Предмет помещают на фотобумагу или плёнку, и освещают лампой так, чтобы на фотоматериал попала его тень. Специфической особенностью фотограммы является то, что в момент экспозиции свет не отражается от предметов, а проходит сквозь них. Непрозрачные предметы запечатлеваются на фотограмме в виде светлых силуэтов. Исторически фотограмма стала первой технологией фотографии, и предшествовала способам оптической фиксации изображения камерой-обскурой. ](*<-lang_ru;;*);;
+				-> rrel_example: [The object is placed on photographic paper or film, and illuminated with a lamp so that its shadow falls on the photographic material. A specific feature of a photogram is that at the moment of exposure, light does not reflect from objects, but passes through them. Opaque objects are imprinted on the photogram in the form of light silhouettes. Historically, the photogram was the first technology of photography, and preceded the methods of optically capturing an image with a camera obscura.](*<-lang_en;;*);;
+			*);;
+		=> nrel_using_constants: ...
+			(* <-concept_camera_roll; concept_camera_obscura;concept_exposition;;*);;
+	*);;
+	
+	concept_photogram <-rrel_key_sc_element:...
+        (*
+	        <-illustration;;
+	        => nrel_main_idtf:
+		        [Рис. (Фотограмма лимонных долек)](*<-lang_ru;;*);
+		        [Pic. (Photogram of lemon slices)](*<-lang_en;;*);;
+	        <= nrel_sc_text_translation:
+            ...
+	        (*
+		        -> rrel_example: "file://photogram.jpg"(* => nrel_format:format_jpg;; *);;
+	        *);;
+        *);;

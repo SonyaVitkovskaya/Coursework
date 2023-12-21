@@ -1,0 +1,35 @@
+concept_staged_photography <- sc_node_class;;
+concept_staged_photography => nrel_main_idtf:
+[staged photography](* <- lang_en;; *);
+[постановочная фотография](* <- lang_ru;; *);;
+
+concept_staged_photography <- rrel_key_sc_element:...
+	(*
+	=> nrel_main_idtf:[Опр.(постановочная фотография)](*<- lang_ru;; *);;
+	=> nrel_main_idtf:[Def.(staged photography)](*<- lang_en;; *);;
+	<-sc_definition;;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Постановочная фотография – фотография, которая демонстрирует искусственно созданные сцены, продуманные и воплощенные с целью создания непосредственно данной фотографии. В широком смысле любая фотография, объекты на которой расположены не случайно, а в соответствии с указаниями автора.](*<- lang_ru;; *);;
+		-> rrel_example:
+			[A staged photography is a photography that demonstrates artificially created scenes, thought out and embodied in order to create the actual photograph. In a broad sense, any photograph in which objects are located not randomly, but in accordance with the instructions of the author.](*<- lang_en;; *);;
+		*);;
+	=> nrel_using_constants: ...
+			(* <-concept_photography;concept_photograph;;  *);;
+	*);;
+
+concept_staged_photography <- rrel_key_sc_element: ...
+	(*
+		<- sc_statement;;
+		=> nrel_main_idtf: [Утв. (О постановочной фотографии)] (* <- lang_ru;; *) ;;
+		=> nrel_main_idtf: [Stat. (About the staged photography)] (* <- lang_en;; *) ;;
+		<= nrel_sc_text_translation: ...
+			(*	
+				-> rrel_example: [Постановочная фотография требует предварительной подготовки, которую, условно, можно разделить на концептуальную часть (продумывание проекта) и техническое воплощение. В некоторых случаях "автором" подобного вида работы может выступать даже не фотограф (человек, производящий непосредственно снимок и следящий за технической частью проекта), а художник-концептуалист, предложивший саму идею и продумавший необходимые для её воплощения образы. Впрочем, необходимо понимать, что изначальная идея фотографии может быть любой и, хотя сам факт изначального замысла из постановочной фотографии исключить нельзя, идея может заключаться в использовании определенных эстетических форм и работе с визуальной стороной проекта. ](*<-lang_ru;;*);;
+				-> rrel_example: [Staged photography requires preliminary preparation, which, conditionally, can be divided into a conceptual part (project thinking) and technical implementation. In some cases, the "author" of this type of work may not even be a photographer (a person who directly takes a picture and monitors the technical part of the project), but a conceptual artist who proposed the very idea and thought out the images necessary for its implementation. However, it is necessary to understand that the original idea of a photograph can be anything and, although the very fact of the original intention cannot be excluded from staged photography, the idea may be to use certain aesthetic forms and work with the visual side of the project.](*<-lang_en;;*);;
+			*);;
+		=> nrel_using_constants: ...
+			(* <-concept_photography;concept_photograph;concept_photographer;nrel_author;;  *);;
+	*);;

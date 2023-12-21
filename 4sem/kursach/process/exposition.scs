@@ -1,0 +1,38 @@
+concept_exposition <- sc_node_class;;
+concept_exposition => nrel_main_idtf:
+[exposition](* <- lang_en;; *);
+[экспозиция](* <- lang_ru;; *);;
+
+concept_exposition <- rrel_key_sc_element:...
+	(*
+	<-sc_definition;;
+	=> nrel_main_idtf:[Опр.(экспозиция)](*<- lang_ru;; *);;
+	=> nrel_main_idtf:[Def.(exposition)](*<- lang_en;; *);;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Экспозиция (в фотографии) — количество актиничного излучения, получаемого светочувствительным элементом. Для видимого излучения может быть рассчитана как произведение освещённости на выдержку, в течение которой свет воздействует на светочувствительный элемент: матрицу или фотоэмульсию.](*<- lang_ru;; *);;
+		-> rrel_example:
+			[Exposition (in photography) is the amount of actinic radiation received by a photosensitive element. For visible radiation, it can be calculated as the product of illuminance and shutter speed, during which the light acts on a photosensitive element: a matrix or a photographic emulsion.](*<- lang_en;; *);;
+		*);;
+	*);;
+
+concept_exposition <- rrel_key_sc_element: ...
+	(*
+		<- sc_statement;;
+		=> nrel_main_idtf: [Утв. (Об экспозиции)](* <- lang_ru;; *) ;;
+		=> nrel_main_idtf:[Stat.(About exposition)](*<- lang_en;; *);;
+		<= nrel_sc_text_translation: ...
+			(*	
+				-> rrel_example: [Слишком малая экспозиция (недодержка) производит малое воздействие и приводит к получению тёмного — недоэкспонированного — изображения, в котором отсутствуют детали в тёмных участках (тенях) объекта съёмки, а иногда изображение отсутствует вообще. Слишком большая экспозиция (передержка) приводит к получению изображения с отсутствующими деталями в светлых местах (светах), а иногда и полному отсутствию изображения. Второй случай особенно ярко проявляется в цифровых фотоаппаратах и кинокамерах, когда переэкспонирование приводит к появлению «пробитых» участков изображения с полностью отсутствующей информацией вследствие выраженного эффекта «насыщения матрицы».
+
+Экспозиция должна быть такой величины, чтобы позволить фотоматериалу с определённой светочувствительностью получить количество света, необходимое для воспроизведения максимального диапазона сюжетно важных яркостей в пределах доступной шкалы.] 	(*<-lang_ru;;*);;
+				> rrel_example: [Too little exposition(underexposure) has little effect and results in a dark—underexposed—image that lacks detail in the dark areas (shadows) of the subject, and sometimes no image at all. Excessive exposition(overexposure) results in an image with missing details in the highlights (highlights), and sometimes no image at all. The second case is especially pronounced in digital cameras and cinema cameras, when overexposure leads to the appearance of "broken" areas of the image with completely missing information due to the pronounced effect of "matrix saturation".
+
+The exposure should be such that it will allow photographic material with a certain photosensitivity to receive the amount of light necessary to reproduce the maximum range of scene-important brightness within the available scale.](*<-lang_en;;*);;
+			*);;
+			=> nrel_using_constants: ...
+			(* <-concept_exposure;;*);;
+	*);;
+

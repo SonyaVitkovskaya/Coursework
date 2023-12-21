@@ -1,0 +1,85 @@
+concept_slr_camera <- sc_node_class;;
+concept_slr_camera => nrel_main_idtf:
+[slr-camera](* <- lang_en;; *);
+[зеркальный фотоаппарат](* <- lang_ru;; *);;
+
+concept_slr_camera <- rrel_key_sc_element:...
+  (*
+  => nrel_main_idtf:[Опр. (зеркальный фотоаппарат)](*<- lang_ru;; *);;
+  => nrel_main_idtf:[Def. (slr-camera)](*<- lang_en;; *);;
+  <-sc_definition;;
+  <=nrel_sc_text_translation:
+    ...
+    (*
+    -> rrel_example:
+      [Зеркальный фотоаппарат — фотоаппарат, видоискатель которого содержит зеркало,
+       расположенное за объективом под углом 45° к его оптической оси.](*<- lang_ru;; *);;
+    -> rrel_example:
+      [SLR camera - a camera whose viewfinder contains a mirror located behind the lens at an angle of 45° to its optical axis.](*<- lang_en;; *);;
+    *);;
+    => nrel_using_constants: ...
+      (* <-concept_camera; concept_lens;;*);;
+  *);;
+
+concept_slr_camera => nrel_advantages:
+ [1. Хорошее качество фотографий: с зеркальной камерой можно фотографировать
+  при плохом освещении и получать снимки, которые попросту невозможно снять компактным фотоаппаратом.]
+ (*	<- lang_ru;; 
+ 	=> nrel_using_constants: ...
+      	(* <-concept_photograph; concept_compact_camera;;*);;
+ *);
+ [2. Высокая скорость настраивания фокуса.]
+ (*	<-lang_ru;; 
+ 	=>nrel_using_constants: ...
+      	(* <-concept_focus;;*);; 
+ *);
+ [3. Поддерживают большое разнообразие сменных объективов.]
+ (*	<- lang_ru;;
+ 	=> nrel_using_constants: ...
+      	(* <-concept_lens;;*);;
+ *);
+ [4. Время работы: подавляющее большинство зеркальных камер с легкостью снимает 500 фотографий без подзарядки.]
+ (*	<-lang_ru;;
+ 	=> nrel_using_constants: ...
+      	(* <-concept_photograph;;*);;
+ *);;
+concept_slr_camera => nrel_disadvantages:
+[1. Большие габариты.](*<- lang_ru;; *);;
+
+
+concept_slr_camera => nrel_advantages:
+ [1. Good photo quality: with a SLR camera, you can take pictures
+   in low light and take pictures that are simply impossible to take with a compact camera.]
+ (*	<- lang_en;; 
+ 	=> nrel_using_constants: ...
+      	(* <-concept_photograph; concept_compact_camera;;*);;
+ *);
+ [2. High speed focus adjustment.]
+ (*	<-lang_en;; 
+ 	=>nrel_using_constants: ...
+      	(* <-concept_focus;;*);; 
+ *);
+ [3. Supports a wide variety of interchangeable lenses.]
+ (*	<- lang_en;;
+ 	=> nrel_using_constants: ...
+      	(* <-concept_lens;;*);;
+ *);
+ [4. Runtime: The vast majority of DSLRs can easily shoot 500 photos on a single charge.]
+ (*	<-lang_en;;
+ 	=> nrel_using_constants: ...
+      	(* <-concept_photograph;;*);;
+ *);;
+concept_slr_camera => nrel_disadvantages:
+[1. Large dimensions.](*<- lang_en;; *);;
+
+concept_slr_camera <-rrel_key_sc_element:...
+        (*
+	        <-illustration;;
+	        => nrel_main_idtf:
+		        [Рис. (зеркальный фотоаппарат)](*<-lang_ru;;*);
+		        [Pic. (slr-camera)](*<-lang_en;;*);;
+	        <= nrel_sc_text_translation:...
+	        (*
+		        -> rrel_example: "file://slr.jpg"(* => nrel_format:format_jpg;; *);;
+	        *);;
+        *);;

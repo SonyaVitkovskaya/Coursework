@@ -1,0 +1,25 @@
+nrel_genre <- sc_node_norole_relation;;
+nrel_genre => nrel_main_idtf: [genre*]
+	(*
+		<-lang_en;;
+	*);;
+nrel_genre => nrel_main_idtf: [жанр*]
+	(*
+		<-lang_ru;;
+	*);;
+	
+nrel_genre <- rrel_key_sc_element: ...
+	(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Опр. (жанр)] 
+			(* <- lang_ru;; *) ;;
+		=> nrel_main_idtf: [Def.(genre)] 
+			(* <- lang_en;; *) ;;
+		<= nrel_sc_text_translation: ...
+			(*	
+				-> rrel_example: [Жанр — общее понятие, отражающее наиболее существенные свойства и связи явлений мира искусства, совокупность формальных и содержательных особенностей произведения.]
+				(*<-lang_ru;;*);;
+				-> rrel_example: [Genre is a general concept that reflects the most essential properties and connections of phenomena in the world of art, a set of formal and content features of a work.]
+				(*<-lang_en;;*);;
+			*);;
+	*);;

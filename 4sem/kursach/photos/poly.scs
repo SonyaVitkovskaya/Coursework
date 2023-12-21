@@ -1,0 +1,23 @@
+photo_beverly_jill_and_polly <- concept_photograph;;
+photo_beverly_jill_and_polly => nrel_main_idtf: 
+[«Beverly, Jill, & Polly»](* <- lang_en;; *); 
+[«Беверли, Джилл и Полли»](* <- lang_ru;; *);;
+ 
+photo_beverly_jill_and_polly <-rrel_key_sc_element:...
+        (*
+	        <-illustration;;
+	        => nrel_main_idtf:
+		        [Рис.(«Беверли, Джилл и Полли»)](*<-lang_ru;;*);
+		        [Pic. («Beverly, Jill, & Polly»)](*<-lang_en;;*);;
+	        <= nrel_sc_text_translation:
+            ...
+	        (*
+		        -> rrel_example: "file://poly.jpg"(* => nrel_format:format_jpg;; *);;
+	        *);;
+        *);;
+
+photo_beverly_jill_and_polly =>nrel_genre: concept_household_art;concept_portrait;;
+photo_beverly_jill_and_polly =>nrel_technique: concept_traditional_photography;;
+photo_beverly_jill_and_polly =>nrel_author: tina_barney;;
+1982 <- number;;
+photo_beverly_jill_and_polly => nrel_creation_year: 1982;;

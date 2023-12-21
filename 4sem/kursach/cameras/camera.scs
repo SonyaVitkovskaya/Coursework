@@ -1,0 +1,44 @@
+concept_camera <- sc_node_class;;
+concept_camera => nrel_main_idtf:
+[camera](* <- lang_en;; *);
+[фотоаппарат](* <- lang_ru;; *);;
+concept_camera => nrel_idtf:
+[фотокамера](* <- lang_ru;; *);
+[камера](* <- lang_ru;; *);;
+
+
+concept_camera <- rrel_key_sc_element:...
+  (*
+  => nrel_main_idtf:[Опр.(фотоаппарат)](*<- lang_ru;; *);;
+  => nrel_main_idtf:[Def.(camera)](*<- lang_en;; *);;
+  <-sc_definition;;
+  <=nrel_sc_text_translation:
+    ...
+    (*
+    -> rrel_example:
+      [Фотоаппарат — устройство для регистрации неподвижных изображений.](*<- lang_ru;; *);;
+    -> rrel_example:
+      [A camera is a device for recording still images.](*<- lang_en;; *);;
+    *);;
+  *);;
+
+concept_camera <- rrel_key_sc_element: ...
+  (*
+    <- sc_statement;;
+                => nrel_main_idtf: [Утв. (О фотоаппарате)] (* <- lang_ru;; *);;
+                => nrel_main_idtf:[Stat.(About camera)](*<- lang_en;; *);;
+    <= nrel_sc_text_translation: ...
+      (*  
+        -> rrel_example: [Фиксация изображения в фотоаппарате осуществляется фотохимическим способом при воздействии света на светочувствительный фотоматериал.](*<-lang_ru;;*);;
+        -> rrel_example: [The image is fixed in the camera by a photochemical method when light is applied to a photosensitive photographic material.](*<-lang_en;;*);;
+      *);;
+  *);;
+
+concept_camera => nrel_type:
+concept_compact_camera;
+concept_slr_camera;
+concept_system_camera;
+concept_medium_format_camera;;
+
+
+

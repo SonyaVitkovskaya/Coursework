@@ -1,0 +1,35 @@
+concept_still_life <- sc_node_class;;
+concept_still_life => nrel_main_idtf:
+[still life](* <- lang_en;; *);
+[натюрморт](* <- lang_ru;; *);;
+
+concept_still_life <- rrel_key_sc_element:...
+	(*
+	=> nrel_main_idtf:[Опр.(натюрморт)](*<- lang_ru;; *);;
+	=> nrel_main_idtf:[Def.(still life)](*<- lang_en;; *);;
+	<-sc_definition;;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Натюрморт (в фотографии) — изображение неодушевлённых предметов быта, атрибутов какой-либо деятельности, цветов, плодов, промышленных изделий, произведений прикладного искусства. Предметные композиции создают своеобразные картины жизни и рассказывают об отсутствующем в кадре человеке.](*<- lang_ru;; *);;
+		-> rrel_example:
+			[Still life (in photography) — an image of inanimate household items, attributes of any activity, flowers, fruits, industrial products, works of applied art. Subject compositions create original pictures of life and tell about a person who is absent from the frame.](*<- lang_en;; *);;
+		*);;
+		=> nrel_using_constants: ...
+			(* <-concept_composition;;*);;
+	*);;
+
+concept_still_life <- rrel_key_sc_element: ...
+	(*
+		<- sc_statement;;
+		=> nrel_main_idtf: [Утв. (О натюрморте в фотографии)] (* <- lang_ru;; *) ;;
+		=> nrel_main_idtf: [Stat. (About the still life in photography)] (* <- lang_en;; *) ;;
+		<= nrel_sc_text_translation: ...
+			(*	
+				-> rrel_example: [Освоение фотографией своих собственных специфических изобразительных средств сказалось и на понимании натюрморта. Расширился круг предметов и мотивов натюрморта, в него всё больше проникала окружавшая художника повседневная реальность. Подробно «описать» предмет, выявляя его красоту, и подчеркнуть  её красотой композиции – такова задача классического натюрморта.](*<-lang_ru;;*);;
+				-> rrel_example: [The assimilation by photography of its own specific visual means also affected the understanding of the still life. The range of objects and motifs of the still life expanded, the everyday reality surrounding the artist more and more penetrated into it. To “describe” the subject in detail, revealing its beauty, and emphasizing it with the beauty of the composition - this is the task of the classical still life.](*<-lang_en;;*);;
+			*);;
+		=> nrel_using_constants: ...
+			(* <-concept_composition;;*);;
+	*);;

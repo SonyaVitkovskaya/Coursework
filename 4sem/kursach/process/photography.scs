@@ -1,0 +1,39 @@
+concept_photography <- sc_node_class;;
+concept_photography => nrel_main_idtf:
+[photography](* <- lang_en;; *);
+[фотосъемка](* <- lang_ru;; *);;
+
+concept_photography => nrel_idtf:
+[photographing](* <- lang_en;; *);
+[фотографирование](* <- lang_ru;; *);;		
+				 					
+concept_photography <- rrel_key_sc_element:...
+	(*
+	=> nrel_main_idtf:[Опр.(фотосъемка)](*<- lang_ru;; *);;
+	=> nrel_main_idtf:[Def.(photography)](*<- lang_en;; *);;
+	<-sc_definition;;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Фотосъёмка — технология записи изображения путём регистрации оптических излучений с помощью светочувствительного фотоматериала или полупроводникового преобразователя.](*<- lang_ru;;*);;
+		-> rrel_example:
+			[Photography is a technology for recording an image by recording optical radiation using a photosensitive photographic material or a semiconductor converter.](*<- lang_en;; *);;
+		*);;
+	=> nrel_using_constants: ...
+			(* <-concept_photograph;;*);;
+	*);;
+
+concept_photography <- rrel_key_sc_element: ...
+	(*
+	=> nrel_main_idtf:[Опр.(фотосъемка)](*<- lang_ru;; *);;
+	=> nrel_main_idtf:[Def.(photography)](*<- lang_en;; *);;
+	<-sc_definition;;
+		<= nrel_sc_text_translation: ...
+			(*	
+				-> rrel_example: [Фотосъёмка - начальная стадия фотографического процесса, выполняемая при помощи фотоаппарата, во время которой в светочувствительном слое фотоматериала под действием света, испускаемого или отражаемого фотографируемым объектом, появляется скрытое изображение этого объекта. После фотохимической обработки оно превращается в видимое изображение.](*<-lang_ru;;*);;
+				-> rrel_example: [Photographing is the initial stage of the photographic process, performed using a camera, during which a latent image of this object appears in the photosensitive layer of photographic material under the action of light emitted or reflected by the photographed object. After photochemical processing, it turns into a visible image.](*<-lang_en;;*);;
+			*);;
+		=> nrel_using_constants: ...
+			(* <-concept_camera; concept_photograph;;*);;
+	*);;

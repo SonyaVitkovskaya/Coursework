@@ -1,0 +1,66 @@
+concept_composition <- sc_node_class;;
+concept_composition => nrel_main_idtf:
+[composition](* <- lang_en;; *);
+[композиция](* <- lang_ru;; *);;
+
+concept_composition <- rrel_key_sc_element:...
+	(*
+	<-sc_definition;;
+	=> nrel_main_idtf:[Опр.(композиция)](*<- lang_ru;; *);;
+	=> nrel_main_idtf:[Def.(composition)](*<- lang_en;; *);;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Композиция – это расположение и соотнесенность частей, элементов и образов произведения (компонентов художественной формы), последовательность введения единиц изображаемого.](*<- lang_ru;; *);;
+		-> rrel_example:
+			[Composition is the arrangement and correlation of parts, elements and images of a work (components of an artistic form), the sequence of introducing units of the depicted.](*<- lang_en;; *);;
+		*);;
+	*);;
+
+concept_composition <- rrel_key_sc_element:...
+	(*
+	<-sc_definition;;
+	=> nrel_main_idtf:[Опр.(композиция)](*<- lang_ru;; *);;
+	=> nrel_main_idtf:[Def.(composition)](*<- lang_en;; *);;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Композицией называется построение художественного произведения, соотнесенность всех частей произведения в единое целое, обусловленное его содержанием и жанром.](*<- lang_ru;; *);;
+		-> rrel_example:
+			[Composition is the construction of a work of art, the correlation of all parts of the work into a single whole, due to its content and genre.](*<- lang_en;; *);;
+		*);;
+		
+	=> nrel_using_constants: ...
+			(* <-nrel_genre;;*);;
+	*);;
+	
+concept_composition <- rrel_key_sc_element:...
+	(*
+	<-sc_definition;;
+	=> nrel_main_idtf:[Опр.(композиция)](*<- lang_ru;; *);;
+	=> nrel_main_idtf:[Def.(composition)](*<- lang_en;; *);;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Композиция – построение художественного произведения, определенная система средств раскрытия, организации образов, их связей и отношений, показанных в произведении.](*<- lang_ru;; *);;
+		-> rrel_example:
+			[Composition – the construction of a work of art, a certain system of means of disclosure, organization of images, their connections and relationships shown in the work.](*<- lang_en;; *);;
+		*);;
+	*);;
+
+
+concept_composition <- rrel_key_sc_element: ...
+	(*
+		<- sc_statement;;
+		=> nrel_main_idtf: [Утв. (О композиции)](* <- lang_ru;; *) ;;
+		=> nrel_main_idtf:[Stat.(About composition)](*<- lang_en;; *);;
+		<= nrel_sc_text_translation: ...
+			(*	
+				-> rrel_example: [Композиция в изобразительном искусстве в отличие от рисунка, цвета, линии, объёма, пространства представляет собой не один из компонентов художественной формы, а художественно-образную, содержательно-формальную целостность — наиболее сложный и совершенный тип структуры, в котором все элементы органично связаны между собой.] 	(*<-lang_ru;;*);;
+				> rrel_example: [Composition in visual arts, unlike drawing, color, line, volume, space, is not one of the components of the artistic form, but an artistic-figurative, content-formal integrity - the most complex and perfect type of structure in which all elements are organically interconnected .](*<-lang_en;;*);;
+			*);;
+	*);;
+

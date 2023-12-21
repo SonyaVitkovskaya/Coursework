@@ -1,0 +1,37 @@
+concept_traditional_photography <- sc_node_class;;
+concept_traditional_photography => nrel_main_idtf:
+[traditional photography](* <- lang_en;; *);
+[традиционная фотография](* <- lang_ru;; *);;
+									
+concept_traditional_photography <- rrel_key_sc_element:...
+	(*
+	=> nrel_main_idtf:[Опр.(традиционная фотография)](*<- lang_ru;; *);;
+	=> nrel_main_idtf:[Def.(traditional photography)](*<- lang_en;; *);;
+	<-sc_definition;;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Традиционная фоторафия — самая распространённая техника фотографии, заключаящаяся в получении двумерного снимка с помощью фотоаппарата.](*<- lang_ru;; *);;
+		-> rrel_example:
+			[Traditional photography is the most common photography technique, which consists in obtaining a two-dimensional image using a camera.](*<- lang_en;; *);;
+		*);;
+	=> nrel_using_constants: ...
+			(* <-concept_photography;concept_photograph;concept_camera;; *);;
+	*);;
+
+concept_traditional_photography <- rrel_key_sc_element: ...
+	(*
+		<- sc_statement;;
+		=> nrel_main_idtf: [Утв. (О традиционной фотографии)] (* <- lang_ru;; *) ;;
+		=> nrel_main_idtf:[Stat.(About traditional photography)](*<- lang_en;; *);;
+		<= nrel_sc_text_translation: ...
+			(*	
+				-> rrel_example: [В традиционной фотографии объектив строит действительное изображение предметов, расположенных в его поле зрения, на плоском светоприёмнике, в качестве которого могут быть использованы фотопластинка, фотоплёнка или фотоэлектрический преобразователь. 
+				Получаемое плоское изображение вызывает иллюзию объёмности изображённых предметов за счёт соблюдения законов линейной перспективы, перекрытия удалённых предметов более близкими, и отображения светотени. При этом человеческое зрение однозначно идентифицирует изображение, как двумерное, и не обладающее глубиной. Ещё одна условность, характерная для фотографии, заключается в неподвижности изображения предметов, в реальности двигавшихся. При этом может быть зафиксирована случайная фаза движения, что в некоторых случаях приводит к искажённой интерпретации зафиксированного события. Кроме того, статичность изображения может вводить в заблуждение, говоря о неподвижности двигавшихся в реальности объектов. Подобные недостатки устранимы с помощью таких приемов, как смазывание изображения движущихся предметов, динамичная композиция и точный выбор выразительной фазы движения. ](*<-lang_ru;;*);;
+				-> rrel_example: [In traditional photography, the lens builds a real image of objects located in its field of view on a flat light detector, which can be used as a photographic plate, film or photoelectric converter. 
+				The resulting flat image causes the illusion of three-dimensionality of the depicted objects due to the observance of the laws of linear perspective, the overlapping of distant objects with closer ones, and the display of chiaroscuro. At the same time, human vision uniquely identifies the image as two-dimensional and without depth. Another convention characteristic of photography is the immobility of the image of objects that actually moved. In this case, a random phase of movement can be recorded, which in some cases leads to a distorted interpretation of the recorded event. In addition, the static image can be misleading, talking about the immobility of moving objects in reality. Such shortcomings can be eliminated with the help of such techniques as blurring the image of moving objects, dynamic composition and the exact choice of the expressive phase of movement.](*<-lang_en;;*);;
+			*);;
+		=> nrel_using_constants: ...
+			(* <-concept_camera_roll; concept_lens;concept_composition;;*);;
+	*);;

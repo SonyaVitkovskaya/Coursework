@@ -1,0 +1,30 @@
+concept_focus <- sc_node_class;;
+concept_focus => nrel_main_idtf:
+[focusing](* <- lang_en;; *);
+[фокусировка](* <- lang_ru;; *);;
+
+concept_focus <- rrel_key_sc_element: ...
+	(*
+		<- sc_statement;;
+		=> nrel_main_idtf: [Утв. (О фокусировке)](* <- lang_ru;; *) ;;
+		=> nrel_main_idtf:[Stat.(About focusing)](*<- lang_en;; *);;
+		<= nrel_sc_text_translation: ...
+			(*	
+				-> rrel_example: [На каждой сделанной фотографии есть фокальная плоскость. Это область пространства, которая может быть максимально резкой на фотографии.
+
+Принято считать, что фокальная плоскость, это что-то вроде окна, которое пересекает сцену, которую вы фотографируете. А любой объект на вашей фотографии, который касается этого окна, находится «в фокусе». А когда вы перемещаете эту плоскость, то есть окно вперед и назад, чтобы получить резкий кадр, это называется фокусировкой.
+
+В современных фотоаппаратах фокусировка обычно происходит в объективе, внутри которого находятся линзы, которые могут перемещаться вперед и назад для изменения оптического пути света. В том же духе, если вы физически отодвинете объектив от камеры, вы измените положение фокуса. (Так работают экестендеры, это такие удлинительные кольца для макросъемки.)
+
+Фокусировка происходит либо автоматически, либо вручную. Автоматическая фокусировка или автофокусировка - это когда система камеры управляет двигателем для перемещения линз объектива для изменения фокуса. Чтобы сфокусироваться вручную, вам нужно вместо этого повернуть фокусировочное кольцо на объективе.] 	(*<-lang_ru;;*);;
+				> rrel_example: [Every photograph you take has a focal plane. This is the region of space that can be the sharpest in a photograph.
+
+It is generally accepted that the focal plane is something like a window that crosses the scene you are photographing. And any object in your photo that touches this window is "in focus". And when you move this plane, that is, the window back and forth, to get a sharp frame, this is called focusing.
+
+In modern cameras, focusing usually takes place in the lens, inside which are lenses that can be moved back and forth to change the optical path of light. In the same vein, if you physically move the lens away from the camera, you will change the focus position. (This is how extenders work, they are extension rings for macro photography.)
+
+Focusing occurs either automatically or manually. Autofocus or autofocus is when the camera system controls a motor to move the lens of the lens to change focus. To focus manually, you need to turn the focus ring on the lens instead.](*<-lang_en;;*);;
+			*);;
+			=> nrel_using_constants: ...
+			(* <-concept_camera;concept_lens;concept_photograph;;*);;
+	*);;

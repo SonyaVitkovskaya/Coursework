@@ -1,0 +1,25 @@
+nrel_technique <- sc_node_norole_relation;;
+nrel_technique => nrel_main_idtf: [technique*]
+	(*
+		<-lang_en;;
+	*);;
+nrel_technique => nrel_main_idtf: [техника*]
+	(*
+		<-lang_ru;;
+	*);;
+	
+nrel_technique <- rrel_key_sc_element: ...
+	(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Опр.(техника)] 
+			(* <- lang_ru;; *) ;;
+			=> nrel_main_idtf: [Def.(technique)] 
+			(* <- lang_en;; *) ;;
+		<= nrel_sc_text_translation: ...
+			(*	
+				-> rrel_example: [Техникой называют профессиональные приёмы, последовательные действия, которые исполняются кем-либо в каком-либо деле, искусстве.]
+				(*<-lang_ru;;*);;
+				-> rrel_example: [Technique is called professional techniques, sequential actions that are performed by someone in any business, art.]
+				(*<-lang_en;;*);;
+			*);;
+	*);;
